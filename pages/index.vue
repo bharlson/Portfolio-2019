@@ -3,6 +3,7 @@
     <div class="row">
       <div class="col">
         <header-nav></header-nav>
+        <p>test</p>
       </div>
     </div>
   </div>  
