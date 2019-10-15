@@ -1,0 +1,8 @@
+@import './variables';
+*{
+    font-family:'Space Mono';
+}
+main{
+    position: relative;
+    top:$headerHeightDesktop;
+}
