@@ -1,8 +1,10 @@
 @import './variables';
 *{
-    font-family:'Space Mono';
+    font-family:'courier';
 }
+
 main{
-    position: relative;
-    top:$headerHeightDesktop;
+    // position: relative;
+    top:$headerHeightMobile;
 }
+ 

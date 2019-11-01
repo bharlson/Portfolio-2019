@@ -1,15 +1,13 @@
 <template>
-    <article class="portfolio-item row pt-4">
-        <div class="col-md-7">
-          <h1>{{name}}</h1>
-          <a href="#">
-            <img :src="imgSelect" alt="" :class="{'zoom-in':imgHover, 'zoom-out':!imgHover, 'order-md-2':leftText} " class="portfolio-item-img img-fluid" @mouseover="imgHover = true" @mouseleave="imgHover = false">
-          </a>
-        </div>
-        <div class="col-md-5" v-if="!imgHover" :class="{'order-md-1':leftText}">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sapiente quod repellendus laboriosam tenetur, iste exercitationem quis sit, similique quae ab provident, eligendi optio tempora laudantium voluptatibus? Beatae, natus non.</p>
-        </div>
+  <div class="col-md-6 mb-4">
+    <article class="portfolio-item">
+        <h3>{{name}}</h3>
+        <span class="overlay-text" v-if="overlayText" >{{overlayText}}</span>
+        <a href="#">
+          <img :src="imgSelect" alt="" :class="{'zoom-in':imgHover, 'zoom-out':!imgHover, 'order-md-2':leftText} " class="portfolio-item-img img-fluid" @mouseover="imgHover = true" @mouseleave="imgHover = false">
+        </a>
     </article>
+  </div>
 </template>
 
 <script>
@@ -21,6 +19,9 @@ export default {
   },
   props:{
       name:{
+          type: String
+      },
+      overlayText:{
           type: String
       },
       imgSrc:{
@@ -53,12 +54,18 @@ export default {
 
 <style lang='scss' scoped>
 @import '@/assets/scss/_variables.scss';
+.portfolio-item{
+  position: relative;
+  img{
+    border:2px solid $black;
+  }
+}
 .zoom{
   &-in{
     @media(min-width:$md){
       transition:transform 1s ease;
       transition-delay: opacity 1.5s;
-      transform:scale(1.05) ;
+      transform:scale(1.01) ;
       // opacity:0.9;
 
     }
@@ -70,5 +77,19 @@ export default {
       opacity:1;  
     }
   }
+}
+.overlay-text{
+  position: absolute;
+  z-index:$front;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color:$black;
+  background-color: rgba(256,256,256,0.5);
+  border:2px solid transparent;
+  margin-left:1rem;
+  margin-top: 1rem;
+
 }
 </style>

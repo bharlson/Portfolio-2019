@@ -6,7 +6,7 @@
 <style lang='scss'>
   .logo{
     width:4rem;
-    height:6rem;
+    height:5rem;
     background-size:cover;
     background-position:center;
     background-image:url(../assets/img/BHlogo-01.svg);
