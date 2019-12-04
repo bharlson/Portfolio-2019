@@ -1,14 +1,34 @@
 <template lang='pug'>
     .grid-container
-        .box
-            h1 hello fdsfdsfss
-        .box
-            h1 hi
+        .box(v-for='post in posts')
+            h1 {{post.title}}
+            p 
+                b {{post.summary}} 
+            img.thumbnail(:src='post.thumbnail')
+            p {{post.content}}
 </template>
 
 <script>
 export default {
-
+    asyncData(context){
+        return context.app.$storyapi.get('cdn/stories/',{
+            version:'draft',
+            starts_with:'blog/'
+        }).then(res=>{
+            console.log(res);
+            return {
+                posts: res.data.stories.map(bp=>{
+                    return {
+                        id: bp.slug,
+                        title: bp.content.title,
+                        summary: bp.content.summary,
+                        content: bp.content.content,
+                        thumbnail: bp.content.thumbnail,
+                    }
+                })
+            };
+        })
+    }
 }
 </script>
 
@@ -26,8 +46,17 @@ export default {
         max-width:85%;
         margin:0 auto;
         &>*{
-            border:1px solid black;
+            display: block;
         }
+        
     }
+    .box{
+        display: block;
+    }
+    .thumbnail{
+        max-width: 200px;
+    }
+
+
 </style>
 

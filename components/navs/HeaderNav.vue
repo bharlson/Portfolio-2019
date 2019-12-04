@@ -3,7 +3,9 @@
     <div class="container">
         <div class="row">
             <div class="col-6 col-md-2 order-1">
-                <logo></logo>
+                <nuxt-link to='/'>
+                    <logo></logo>
+                </nuxt-link>
             </div>
             <div class="col-md-8 order-3 order-md-2">
             <transition name="header-nav" mode="out-in">

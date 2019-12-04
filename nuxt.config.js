@@ -42,9 +42,24 @@ module.exports = {
   */
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt',
+    'bootstrap-vue/nuxt',    
+    ['storyblok-nuxt', {
+      accessToken:
+        process.env.NODE_ENV == 'production'
+        ? 'rkmIneMnFTmmQYCa49dyYQtt'
+        : 'IkeDyDaOeLrgmqqzWCRYsAtt',
+      cacheProvider:'memory'
+    }],
   ],
-
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '*',
+        component: resolve(__dirname, 'layouts/error.vue')
+      })
+    }
+  },
   /*
   ** Build configuration
   */

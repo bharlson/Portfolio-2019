@@ -1,12 +1,14 @@
 <template>
   <div class="col-md-6 mb-4">
-    <article class="portfolio-item">
-        <h3>{{name}}</h3>
-        <span class="overlay-text" v-if="overlayText" >{{overlayText}}</span>
-        <a href="#">
-          <img :src="imgSelect" alt="" :class="{'zoom-in':imgHover, 'zoom-out':!imgHover, 'order-md-2':leftText} " class="portfolio-item-img img-fluid" @mouseover="imgHover = true" @mouseleave="imgHover = false">
-        </a>
-    </article>
+    <nuxt-link :to="{path:link}">
+      <article class="portfolio-item">
+          <h3>{{name}}</h3>
+          <span class="overlay-text" v-if="overlayText" >{{overlayText}}</span>
+          <a href="#">
+            <img :src="imgSelect" alt="" :class="{'zoom-in':imgHover, 'zoom-out':!imgHover, 'order-md-2':leftText} " class="portfolio-item-img img-fluid" @mouseover="imgHover = true" @mouseleave="imgHover = false">
+          </a>
+      </article>
+    </nuxt-link>
   </div>
 </template>
 
@@ -21,6 +23,9 @@ export default {
       name:{
           type: String
       },
+      link:{
+          type: String
+      },
       overlayText:{
           type: String
       },
@@ -32,17 +37,20 @@ export default {
       },
       leftText:{
         type:Boolean
+      },
+      isMobile:{
+        type:Boolean
       }
   },
   computed:{
-      imgSelect(){
-          if(this.imgHover){
-              return this.imgSrc
-          }
-          else{
-              return this.staticSrc
-          }
-      }
+    imgSelect(){
+        if(this.imgHover & !this.isMobile){
+            return this.imgSrc
+        }
+        else{
+            return this.staticSrc
+        }
+    }
   },
   methods:{
     skewImg(){
@@ -54,6 +62,12 @@ export default {
 
 <style lang='scss' scoped>
 @import '@/assets/scss/_variables.scss';
+a{
+  color:$black;
+  &:hover, &:active{
+   text-decoration:none;
+  }
+}
 .portfolio-item{
   position: relative;
   img{
@@ -90,6 +104,5 @@ export default {
   border:2px solid transparent;
   margin-left:1rem;
   margin-top: 1rem;
-
 }
 </style>
