@@ -1,6 +1,6 @@
 <template>
-    <figure>
-        <img :src="require(src)" alt="" class="img-fluid">
+    <figure class="figure">
+        <img :src="src" alt="" class="img-fluid">
         <figcaption>{{caption}}</figcaption>
     </figure>
 </template>
@@ -26,7 +26,13 @@ export default {
 }
 </script>
 
-<style style='scss' scoped>
-@import url(../assets/scss/_variables.scss);
+<style lang='scss' scoped>
+@import '@/assets/scss/_variables.scss';
+img{
+    border: 2px solid $black;
+}
+figcaption{
+    text-align: center;
+}
 
 </style>

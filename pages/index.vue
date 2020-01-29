@@ -56,8 +56,8 @@ export default {
         {
           name:'Scott 2019',
           link:'scott2019',
-          imgSrc:require('@/assets/img/scott2019/scott2019-desktop-animated.gif'),
-          staticSrc:require('@/assets/img/scott2019/scott2019-desktop-static.jpg')
+          imgSrc:require('@/static/img/scott2019/scott2019-desktop-animated.gif'),
+          staticSrc:require('@/static/img/scott2019/scott2019-desktop-static.jpg')
         },
         {
           name:'Scotsman Guide',
