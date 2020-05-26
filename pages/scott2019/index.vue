@@ -6,6 +6,7 @@
                     <h1>{{title}}</h1>
                     <p><b>Role:&nbsp;</b>{{role}}</p>
                     <p v-html="intro"></p>
+                    <!-- <img src="@/static/img/scott2019/scott2019-final-homepage-full.jpg" alt=""> -->
                 </div>
             </div>
         </section>
@@ -18,15 +19,15 @@
             <div class="row">
                 <div class="col-md-8">
                     <project-img-scrollable
-                    :src="images[1].figure_img"
-                    :caption="images[1].figure_caption"
+                    src="/scott2019/scott2019-final-homepage-full.jpg"
+                    caption="'Homepage: Desktop'"
                     name="scott2019-homepage-desktop"
                     ></project-img-scrollable>
                 </div>
                 <div class="col-10 offset-1 offset-md-0 col-md-4">
                     <project-img-scrollable
-                    :src="images[2].figure_img"
-                    :caption="images[2].figure_caption"
+                    src="/scott2019/scott2019-final-homepage-mobile-full.jpg"
+                    caption="Homepage: Mobile"
                     name="scott2019-homepage-mobile"
                     ></project-img-scrollable>
                 </div>

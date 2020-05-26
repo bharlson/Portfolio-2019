@@ -58,24 +58,24 @@ module.exports = {
     }],
   ],
 
-  generate:{
-    routes: function(){
-      return axios.get('https://api.storyblok.com/v1/cdn/stories?version=published&token=2n3obJaIQxp8eUfmQAtFiwtt&cv=' + Math.floor(Date.now()/1e3)
-      )
-      .then(res =>{
-        return [
-          '/',
-          '/scott2019',
-          '/creaytive',
-          '/posters', 
-          '/logos',
-          '/about',
-          '/scotsman-guide',
-          '/ask-a-lender'
-        ]
-      })
-    }
-  },
+  // generate:{
+  //   routes: function(){
+  //     return axios.get('https://api.storyblok.com/v1/cdn/stories?version=published&token=2n3obJaIQxp8eUfmQAtFiwtt&cv=' + Math.floor(Date.now()/1e3)
+  //     )
+  //     .then(res =>{
+  //       return [
+  //         '/',
+  //         '/scott2019',
+  //         '/creaytive',
+  //         '/posters', 
+  //         '/logos',
+  //         '/about',
+  //         '/scotsman-guide',
+  //         '/ask-a-lender'
+  //       ]
+  //     })
+  //   }
+  // },
 
 
   router: {

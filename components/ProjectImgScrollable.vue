@@ -3,7 +3,7 @@
         <div class="scrollable" 
         :class="name"
         >
-            <img :src="src" alt="" class="img-fluid">
+            <img :src="'/_nuxt/static/img/'+src" alt="" class="img-fluid">
             
         </div>
         <figcaption>{{caption}}</figcaption>
