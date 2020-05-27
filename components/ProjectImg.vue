@@ -1,6 +1,6 @@
 <template>
     <figure class="figure">
-        <img :src="src" alt="" class="img-fluid">
+        <img :src="'/img/'+src" alt="" class="img-fluid">
         <figcaption>{{caption}}</figcaption>
     </figure>
 </template>
