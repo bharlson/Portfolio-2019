@@ -1,38 +1,26 @@
 <template>
-    <div class="container" v-editable="blok">
+    <div class="container">
         <section id="intro">
             <div class="row">
                 <div class="col">
-                    <h1>{{title}}</h1>
-                    <p><b>Role:&nbsp;</b>{{role}}</p>
-                    <p v-html='intro'></p>
+                    <h1>Creaytive</h1>
+                    <p><b>Role:&nbsp;</b>Web Development</p>
+                    <p>Over the summer of 2016 I worked as the sole web development intern for the startup marketing firm Creaytive Inc. My first project working there was to rebuild the company's website. Initially the company site was built in wordpress using a series of plugins that gave the site an excessively long load time and inconsistent design scheme. Working off design comps created by the owner, Alex Korobov, I was tasked with rebuilding the site manually without using a CMS.</p>
                 </div>
             </div>
-        </section>
-        <section id="images">
             <div class="row">
-                <div class="col-lg-8">
+               <div class="col-md-8">
                     <project-img-scrollable 
-                    :src='images[1].figure_img' 
-                    :caption='images[1].figure_caption'
-                    name='creaytive-desktop'
-                    ></project-img-scrollable>
-                </div>
-                <div class="col-md-6 col-lg-4">
+                    src="creaytive/creaytivehomepagetablet.png"
+                    name="creaytive-desktop"
+                    >
+                    </project-img-scrollable>
+               </div>
+                <div class="col-10 offset-1 offset-md-0 col-md-4">
                     <project-img-scrollable 
-                    :src='images[2].figure_img' 
-                    :caption='images[2].figure_caption'
-                    name='creaytive-mobile'
+                    src="creaytive/creaytivehomepagemobile.png"
+                    name="creaytive-mobile"
                     ></project-img-scrollable>
-                </div>
-                <div class="col-md-6">
-                    <p v-html="body"></p>
-                </div>
-                <div class="col-md-6">
-                    <project-img 
-                    :src='images[3].figure_img'
-                    :caption='images[3].figure_caption'
-                    ></project-img>
                 </div>
             </div>
         </section>
@@ -52,30 +40,30 @@ export default {
         return{
             windowWidth:0
         }
-    },
-    asyncData(context){
-        return context.app.$storyapi.get('cdn/stories/creaytive',{
-            version: context.isDev ? 'draft': 'published', 
-        }).then(res=>{
-            console.log(res.data.story.content);
-            return {
-                blok: res.data.story.content,
-                title: res.data.story.content.title,
-                role: res.data.story.content.role,
-                intro: res.data.story.content.intro,
-                body: res.data.story.content.body,
-                images: res.data.story.content.images
-            };
-        })
-    },
-    mounted(){
-        this.$storybridge.on('change', ()=>{
-            location.reload(true);
-        });
-        window.onresize = ()=>{
-            this.windowWidth = window.innerWidth;
-        }
     }
+    // asyncData(context){
+    //     return context.app.$storyapi.get('cdn/stories/creaytive',{
+    //         version: context.isDev ? 'draft': 'published', 
+    //     }).then(res=>{
+    //         console.log(res.data.story.content);
+    //         return {
+    //             blok: res.data.story.content,
+    //             title: res.data.story.content.title,
+    //             role: res.data.story.content.role,
+    //             intro: res.data.story.content.intro,
+    //             body: res.data.story.content.body,
+    //             images: res.data.story.content.images
+    //         };
+    //     })
+    // },
+    // mounted(){
+    //     this.$storybridge.on('change', ()=>{
+    //         location.reload(true);
+    //     });
+    //     window.onresize = ()=>{
+    //         this.windowWidth = window.innerWidth;
+    //     }
+    // }
 }
 </script>
 
