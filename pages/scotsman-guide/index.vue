@@ -5,7 +5,7 @@
                 <div class="col-md-9 col-lg-7 col-xl-6"><h1>{{projectName}}</h1></div>
                 <div class="col-md">                    
                     <p class="pt-md-3">
-                        <a href="http://scotsmanguide.com" target="_blank">Visit Site</a>
+                        <a href="http://www.scotsmanguide.com" target="_blank">Visit Site</a>
                     </p> 
                 </div>
             </div>
@@ -22,12 +22,14 @@
                 <project-img-scrollable 
                 src="sgm/scotsmanguide-homepage-full.jpg"
                 name="sgm-homepage-desktop"
+                caption="Homepage: Desktop"
                 ></project-img-scrollable>
             </div>
             <div class="col-10 offset-1 offset-md-0 col-md-4">
                 <project-img-scrollable 
                 src="sgm/scotsmanguide-homepage-mobile-full.jpg"
                 name="sgm-homepage-mobile"
+                caption="Homepage: Mobile"
                 ></project-img-scrollable>
             </div>
         </div>

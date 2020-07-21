@@ -24,7 +24,10 @@
             </div>
             <div class="row">
                <div class="col">
-                    <project-img src="aal/LenderSearch-Animation.gif"></project-img>
+                    <project-img 
+                    src="aal/LenderSearch-Animation.gif"
+                    caption="Lender Search Interaction"
+                    ></project-img>
                </div>
             </div>
         </section>
@@ -40,12 +43,14 @@
                     <project-img-scrollable 
                     src="aal/aal-tlp-desktop-screen.jpg"
                     name="aal-tlp-desktop"
+                    caption="Topic Landing Page: Desktop"
                     ></project-img-scrollable>
                 </div>
                 <div class="col-10 offset-1 offset-md-0 col-md-4">
                     <project-img-scrollable 
                     src="aal/aal-tlp-mobile-screen.jpg"
                     name="aal-tlp-mobile"
+                    caption="Topic Landing Page: Mobile"
                     ></project-img-scrollable>
                 </div>
             </div>
