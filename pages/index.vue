@@ -17,6 +17,7 @@
           </div>
         </div>
       </section>
+    <section id="projects">
       <div class="row">
         <div class="col">
           <h2>Projects</h2>
@@ -35,6 +36,7 @@
         >
         </portfolio-item>
       </div>
+    </section>
     </div>
 </div>  
 </template>

@@ -41,29 +41,6 @@ export default {
             windowWidth:0
         }
     }
-    // asyncData(context){
-    //     return context.app.$storyapi.get('cdn/stories/creaytive',{
-    //         version: context.isDev ? 'draft': 'published', 
-    //     }).then(res=>{
-    //         console.log(res.data.story.content);
-    //         return {
-    //             blok: res.data.story.content,
-    //             title: res.data.story.content.title,
-    //             role: res.data.story.content.role,
-    //             intro: res.data.story.content.intro,
-    //             body: res.data.story.content.body,
-    //             images: res.data.story.content.images
-    //         };
-    //     })
-    // },
-    // mounted(){
-    //     this.$storybridge.on('change', ()=>{
-    //         location.reload(true);
-    //     });
-    //     window.onresize = ()=>{
-    //         this.windowWidth = window.innerWidth;
-    //     }
-    // }
 }
 </script>
 

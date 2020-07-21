@@ -2,26 +2,18 @@
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-6 col-md-2 order-1">
+            <div class="col-3">
                 <nuxt-link to='/'>
                     <logo></logo>
                 </nuxt-link>
             </div>
-            <div class="col-md-8 order-3 order-md-2">
-            <transition name="header-nav" mode="out-in">
-                <nav class="header-nav" v-if="openMenu">
+            <div class="col-9">
+                <nav class="header-nav">
                     <ul class="header-nav-list">
-                        <li class="header-nav-list-item">Projects</li>
-                        <li class="header-nav-list-item">About</li>
-                        <!-- <li class="header-nav-list-item">Contact</li> -->
+                        <li class="header-nav-list-item" v-scroll-to="'#projects'">Projects</li>
+                        <nuxt-link to="/about" tag= "li" class="header-nav-list-item">About</nuxt-link>
                     </ul>
                 </nav>
-            </transition>
-            </div>
-            <div class="col-6 col-md-2 order-2 order-md-3">
-                <a @click="openMenu = !openMenu">
-                    <hamburger-menu :menuOpen="openMenu"></hamburger-menu>
-                </a>
             </div>
         </div>
 
@@ -53,33 +45,17 @@ export default {
 
     .header{
         z-index: 10000;
-        position: fixed;
+        // position: fixed;
         width:100%;
         display: block;
-        background: $white;
+        background-color:$white;
         padding-top:1rem;
-        &-nav{
-            padding: 1rem;
-            transition: all 2s;
-            transform:scaleY(1);
-            &-enter-active, &-leave-active{
-                transition:opacity 0.5s, transform 1.25s;
-                .header-nav{
-                    transition: transform 1s;
-                    transform:scaleY(1);
-                }
-            }
-            &-leave-active{
-                transition:opacity 0.5s, transform 0.5s;
-            }
-            &-enter, &-leave-to{
-                opacity: 0;
-                transform:translateX(33%);
-                .header-nav{
-                    transform:scaleY(0)
-                }
-            }
 
+        &-nav{
+            padding: 0 1rem 1rem 1rem;
+            @media (min-width: 768px) {
+                padding:1rem;
+            }
             &-list{
                 list-style-type:none;
                 padding:0;
@@ -89,7 +65,7 @@ export default {
                     text-align: right;
                 }
                 &-item{
-                    display:inline-block;
+                    display:inline;
                     font-size:2rem;
                     padding-right:1rem;
                     &:hover, &:active{

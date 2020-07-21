@@ -2,8 +2,17 @@
     <div class="container">
         <section id="intro">
             <div class="row">
-                <div class="col">
+                <div class="col-md-5 col-lg-4 col-xl-3">
                     <h1>Scott 2019</h1>
+                </div>
+                <div class="col-md">                    
+                    <p class="pt-md-3">
+                        <a href="http://scott2019.bjornharlson.com" target="_blank">Visit Site</a>
+                    </p> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <p><b>Role:&nbsp;</b>Web Development, Design</p>
                     <p>Over the course of 2019, I built and managed the website for Shaun Scott's campaign for Seattle City Council.</p>
                     <p>Around the same time I started working on the campaign site, I was learning vue.js for my work at Scotsman Guide. I took it as an opportunity to reinforce what I was learning, and built out the site using nuxt.js, a vue powered static site generator.</p>
@@ -16,7 +25,6 @@
                     <!-- <p v-html="images[1].text"></p> -->
                 </div>
             </div>
-            <!-- <img src="@/static/img/scott2019/scott2019-final-homepage-mobile-full.jpg" alt="" class="img-fluid"> -->
             <div class="row">
                 <div class="col-md-8">
                     <project-img-scrollable

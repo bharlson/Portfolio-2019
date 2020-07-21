@@ -10,9 +10,8 @@
             <div class="col-9">
                 <nav class="header-nav">
                     <ul class="header-nav-list">
-                        <li class="header-nav-list-item">Projects</li>
-                        <li class="header-nav-list-item">About</li>
-                        <!-- <li class="header-nav-list-item">Contact</li> -->
+                        <nuxt-link to="/#projects" tag="li" class="header-nav-list-item">Projects</nuxt-link>
+                        <nuxt-link to="/about" tag= "li" class="header-nav-list-item">About</nuxt-link>
                     </ul>
                 </nav>
             </div>
