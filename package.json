@@ -22,7 +22,7 @@
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.19.4",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
