@@ -2,7 +2,7 @@
     <div class="container">
         <section id="intro">
             <div class="row">
-                <div class="col-md-9 col-lg-7 col-xl-6"><h1>{{projectName}}</h1></div>
+                <div class="col-md-9 col-lg-7 col-xl-5"><h1>{{projectName}}</h1></div>
                 <div class="col-md">                    
                     <p class="pt-md-3">
                         <a href="http://www.scotsmanguide.com" target="_blank">Visit Site</a>
@@ -11,12 +11,18 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p><b>Role:&nbsp;</b>Design, Web Development</p>
-                    <p>Scotsman Guide is a monthly publication serving professionals in the mortgage lending industry. Established in 1985, the print edition has a longstanding reputation as a quality media outlet among mortgage lenders and loan originators.</p>
-                    <p>Between 2017 and 2019, I worked with the design and development teams at Scotsman Guide to build a more modern site.</p>
+                    <p><b>Role:&nbsp;</b>Design, Web Development, Audio Engineering</p>
+                    <p>
+                        Scotsman Guide was established in 1985 as a monthly publication serving professionals in the mortgage lending industry. The print edition has a longstanding reputation among industry professionals, and increasingly the website has become a popular source for industry data, job listings and lead generation.
+                    </p>
                 </div>
             </div>
         </section>
+        <div class="row">
+            <div class="col">
+                <h2>Website Redesign</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-8">
                 <project-img-scrollable 
@@ -33,7 +39,64 @@
                 ></project-img-scrollable>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>
+                    When I was first hired, the company was at a crossroads. The brand has always had strong industry support, but was largely stuck in the past. With print journalism in decline and a website that, as late as 2017, was not mobile friendly, it was time for a major change. 
+                </p>
+                <p>
+                    Since then I've seen the company flourish. Diversifying its business model beyond the core product of the magazine, and embracing 
+                    <a href="https://www.scotsmanguide.com/pages/company/about-us" target="_blank">a variety of digital revenue streams</a>. The new website marked the beginning of a renaissance in the business as a whole.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <project-img src="sgm/old-sgm-site.jpg" caption="Homepage: Old Website"></project-img>
+            </div>
+        </div>
+        <section id="feature-articles">
+            <div class="row">
+                <div class="col">
+                    <h2>Feature Articles</h2>
+                    <p>Inspired by digital publications like Wired magazine, we revamped our article builder to allow for custom colors and css to give feature articles some extra visual flair to match the illustration.</p>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <project-img src="sgm/jackson-feature-style.jpg"
+                    ></project-img>
+                    <p>Using CSS variables, Individual colors in the article editor can be set directly by entering a hex code. I was especially inspired by the color scheme in this illustration.</p>
+                </div>
+                <div class="col-md-7">
+                    <project-img-scrollable
+                    src="sgm/jackson-feature-full.jpg"
+                    name="sgm-jackson-feature"
+                    caption="Feature Article"
+                    ></project-img-scrollable>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>As search engine's increasingly prioritize content with images, I've gotten the chance to do more image production to augment the company's web content. As a lifelong geography nerd, two of my favorite sections to work on are 
+                        <a href="" target="_blank">Spotlight</a> and 
+                        <a href="" target="_blank">International Investments</a>, which focus on industry news in a different US region or foreign country respectively.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <project-img src="sgm/pacific-northwest-spotlight.jpeg" caption="Residential Spotlight: Pacific Northwest"></project-img>
+                </div>
+                <div class="col-lg-6">
+                    <project-img src="sgm/germany-intl-investments.jpeg" caption="International Investments: Germany"></project-img>
+                </div>
+            </div>
+        </section><!--/feature articles-->
+        <section id="audio">
+
+        </section>
     </div>
+    
+
 </template>
 
 <script>
@@ -47,7 +110,7 @@ export default {
     },
     data(){
         return{
-            projectName:'Scotsman Guide Website'
+            projectName:'Scotsman Guide'
         }
     }
 }
@@ -86,6 +149,23 @@ export default {
             height:480px;
         }
     }
+}
+.sgm-jackson-feature{
+        height:290px;
+        @media (min-width: $sm){
+            height:310px;
+        }
+        @media (min-width: $md){
+            height:296px;
+        }
+        @media (min-width: $lg){
+            height:418px;
+        }
+        @media (min-width: $xl){
+            height:480px;
+        }
+
+
 }
 </style>
 

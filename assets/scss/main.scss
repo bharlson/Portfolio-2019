@@ -1,10 +1,19 @@
 @import './variables';
 *{
-    font-family:'courier';
+    font-family:'Courier', Courier, monospace;
 }
 
 main{
     // position: relative;
     top:$headerHeightMobile;
 }
- 
+
+a{
+    color:blue;
+    &:hover,&:active{
+        color:blue;
+    }
+}
+p{
+    font-size: 1.25rem;
+}

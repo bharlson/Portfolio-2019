@@ -11,7 +11,8 @@
                 <nav class="header-nav">
                     <ul class="header-nav-list">
                         <li class="header-nav-list-item" v-scroll-to="'#projects'">Projects</li>
-                        <nuxt-link to="/about" tag= "li" class="header-nav-list-item">About</nuxt-link>
+                        <li class="header-nav-list-item" v-scroll-to="'#contact'">Contact</li>
+                        <!-- <nuxt-link to="/about" tag= "li" class="header-nav-list-item">About</nuxt-link> -->
                     </ul>
                 </nav>
             </div>

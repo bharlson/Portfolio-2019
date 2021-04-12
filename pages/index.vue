@@ -13,7 +13,7 @@
           <div class="col">
             <p>I'm a designer and front end web developer born and raised in Seattle</p>
             <p>Artist since 1994, designer since 2011, web developer since 2014.</p>
-            <p>Just finished up work on the new redesign of <a href="http://scotsmanguide.com">Scotsman Guide</a>'s website</p>
+            <p>Currently working as a digital designer at <a href="http://scotsmanguide.com">Scotsman Guide</a></p>
           </div>
         </div>
       </section>
@@ -130,7 +130,18 @@ img{
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
+  background-blend-mode:screen;
+  h1{
+        &:hover,&:active{
+        opacity:0.98;
+        // mix-blend-mode:hue;
+
+    }
+  }
   @media (min-width: 768px) {
+    h1{
+      font-size: 7rem;
+    }
     &:hover,&:active{
         background-image: url(../assets/img/about/bus-selfie-animated.gif/);
     }

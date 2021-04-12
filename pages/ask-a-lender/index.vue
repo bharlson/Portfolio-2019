@@ -2,8 +2,16 @@
     <div class="container">
         <section id="intro">
             <div class="row">
+                <div class="col-md-6 col-lg-4"><h1>{{projectName}}</h1></div>
+                <div class="col-md">
+                    <p class="pt-md-3">
+                        <a href="https://web.archive.org/web/20180701133149/https://www.askalender.com/">View Site (Archived)</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col">
-                    <h1>{{projectName}}</h1>
+                    <!-- <h1>{{projectName}}</h1> -->
                     <p><b>Role:&nbsp;</b>Design, Web Development</p>
                     <p>Ask a Lender was launched in 2017 as a sister company to Scotsman Guide. Built off the longstanding connections Scotsman Guide has in the mortgage lending industry, Ask a Lender was conceived as a consumer-facing site for connecting borrowers with lenders in a free and transparent way.</p>
                     <p>As of 2018, the company is defunct, but features originally implemented in Ask a Lender have been adapted to the newly revamped Scotsman Guide website</p>
@@ -11,7 +19,7 @@
             </div>
             <div class="row">
                <div class="col">
-                    <project-img src="aal/aal-homepage-desktop-static.jpg"></project-img>
+                    <project-img class="justify-content-center" src="aal/aal-homepage-desktop-static.jpg"></project-img>
                </div>
             </div>
         </section>

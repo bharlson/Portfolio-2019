@@ -4,15 +4,18 @@
     <main>
       <nuxt />
     </main>
+    <site-footer></site-footer>
   </div>
 </template>
 <script>
 import HeaderNav from '~/components/navs/HeaderNav2.vue'
 import ProjectImg from '~/components/ProjectImg.vue'
+import SiteFooter from '~/components/Footer.vue'
 export default {
   components: {
     HeaderNav,
-    ProjectImg
+    ProjectImg,
+    SiteFooter
   },
   layout:'default'
 }
