@@ -99,7 +99,7 @@ export default {
 .scrollable{
     @media (min-width: 768px) {
         overflow: scroll;
-        cursor:ns-resize;
+        // cursor:ns-resize;
     }
     overflow:hidden;
     width: 100%;

@@ -140,7 +140,7 @@
 import ProjectImg from '@/components/ProjectImg.vue'
 import ProjectImgScrollable from '@/components/ProjectImgScrollable.vue'
 export default {
-    layout:'project',
+    layout:'page',
     components:{
         ProjectImg,
         ProjectImgScrollable

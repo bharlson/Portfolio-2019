@@ -10,7 +10,8 @@
             <div class="col-9">
                 <nav class="header-nav">
                     <ul class="header-nav-list">
-                        <li class="header-nav-list-item" v-scroll-to="'#projects'">Projects</li>
+                        <nuxt-link v-if="!home" to="/#projects" tag="li" class="header-nav-list-item">Projects</nuxt-link>
+                        <li v-if="home" class="header-nav-list-item" v-scroll-to="'#projects'">Projects</li>
                         <li class="header-nav-list-item" v-scroll-to="'#contact'">Contact</li>
                         <nuxt-link to="/about" tag= "li" class="header-nav-list-item">About</nuxt-link>
                     </ul>
@@ -27,15 +28,18 @@ import HamburgerMenu from '@/components/HamburgerMenu.vue'
 export default {
     data(){
         return{
-            openMenu:false
+            openMenu:false,
         }
     },
     components:{ 
         Logo,
         HamburgerMenu
     },
-    computed:{
-        
+    props:{
+        home:{
+            type:Boolean,
+            default: false
+        }
     }
 }
 </script>

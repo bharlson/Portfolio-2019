@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-nav ref="headerHeight"></header-nav>
+    <header-nav home="true" ref="headerHeight"></header-nav>
     <main>
       <nuxt />
     </main>
@@ -15,7 +15,7 @@ export default {
     HeaderNav,
     SiteFooter
   },
-  layout:'default'
+  layout:'home'
 }
 </script>
 <style style='scss'>

@@ -50,7 +50,7 @@ export default {
     PortfolioItem,
     ImgHover
   },
-  layout:'default',
+  layout:'home',
   data(){
     return{
       windowWidth:0,

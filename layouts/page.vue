@@ -8,7 +8,7 @@
   </div>
 </template>
 <script>
-import HeaderNav from '~/components/navs/HeaderNav2.vue'
+import HeaderNav from '~/components/navs/HeaderNav.vue'
 import ProjectImg from '~/components/ProjectImg.vue'
 import SiteFooter from '~/components/Footer.vue'
 export default {
@@ -17,7 +17,7 @@ export default {
     ProjectImg,
     SiteFooter
   },
-  layout:'default'
+  // layout:'default'
 }
 </script>
 <style style='scss'>

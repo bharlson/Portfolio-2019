@@ -11,7 +11,7 @@
                     <h1 class="my-5">Bjørn Harlson</h1>
                 </div>
                 <div class="col-lg-4">
-                    
+
                 </div>
             </div>
             <!--/row-->
@@ -50,7 +50,7 @@
 import ProjectImg from '@/components/ProjectImg.vue'
 import WorkExp from '@/components/WorkExp.vue'
 export default {
-    layout:'project',
+    layout:'page',
     components:{
         ProjectImg,
         WorkExp
