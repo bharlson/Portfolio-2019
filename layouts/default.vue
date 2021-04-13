@@ -9,7 +9,7 @@
 </template>
 <script>
 import HeaderNav from '~/components/navs/HeaderNav.vue'
-import SiteFooter from '~/components/Footer.vue'
+import SiteFooter from '~/components/FooterHome.vue'
 export default {
   components: {
     HeaderNav,

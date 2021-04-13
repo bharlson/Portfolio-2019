@@ -4,9 +4,9 @@
       <section id="intro">
         <div class="row">
           <div class="col">
-            <div class="name">
+            <nuxt-link tag="div" to="/about" class="name">
                 <h1>BJØRN HARLSON</h1>
-            </div>
+            </nuxt-link>
           </div>
         </div>
         <div class="row">
@@ -137,6 +137,10 @@ img{
         // mix-blend-mode:hue;
 
     }
+  }
+  &:hover,&:active{
+    cursor:url(../static/img/cursors/waving-hand.png), auto;
+
   }
   @media (min-width: 768px) {
     h1{

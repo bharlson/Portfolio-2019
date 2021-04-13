@@ -78,7 +78,7 @@
                 </div>
             </div>
         </section><!--/feature articles-->
-        <section>
+        <section id="img-production">
             <div class="row">
                 <div class="col">
                     <h2>Image Production</h2>
@@ -93,10 +93,19 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <project-img src="sgm/pacific-northwest-spotlight.jpeg" caption="Residential Spotlight: Pacific Region"></project-img>
+                    <project-img 
+                    alt="res-spotlight-pacific-region"
+                    src="sgm/pacific-northwest-spotlight.jpeg" 
+                    caption="Residential Spotlight: Pacific Region"
+                    preview="true"
+                    ></project-img>
                 </div>
                 <div class="col-lg-6">
-                    <project-img src="sgm/germany-intl-investments.jpeg" caption="International Investments: Germany"></project-img>
+                    <project-img src="sgm/germany-intl-investments.jpeg" 
+                    alt="intl-investments-germany" 
+                    caption="International Investments: Germany"
+                    preview="true"
+                    ></project-img>
                 </div>
             </div>
         </section>

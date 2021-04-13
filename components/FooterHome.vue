@@ -1,14 +1,9 @@
 <template>
   <footer class="footer" id="contact">
-      <div class="footer-nav container py-5">
+      <div class="container py-5">
           <div class="row">
               <div class="col">
                   <h2>Contact</h2>
-              </div>
-              <div class="col">
-                  <h2 class="text-center text-md-right">
-                      <nuxt-link to="/#projects" class="footer-nav-list-item footer-projects-link" >Projects</nuxt-link>
-                  </h2>
               </div>
           </div>
           <div class="row">
@@ -25,6 +20,7 @@
                   </p>
               </div>
           </div>
+
       </div>
   </footer>
 </template>
@@ -35,10 +31,15 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import '@/assets/scss/_variables.scss';
-.footer-projects-link{
-    font-size: 2rem;
-    
+<style lang='scss'>
+
+.footer{
+    &-links{
+        li{
+            font-size:1.5rem;
+            display: inline;
+            padding-right:4rem;
+        }
+    }
 }
 </style>

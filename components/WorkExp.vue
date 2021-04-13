@@ -1,10 +1,10 @@
 <template>
   <article class="work-exp">
     <div class="row">
-        <div class="col-8">
+        <div class="col-md-8">
             <h4><b v-html="companyName"></b></h4>
         </div>
-        <div class="col"><p>{{location}}</p></div>
+        <div class="col-md-4"><p>{{location}}</p></div>
     </div>
     <div class="row">
         <div class="col">

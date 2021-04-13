@@ -30,7 +30,7 @@ export default {
         transition: transform 0.5s ease;
         &:hover,&:active{
             cursor:pointer;
-            opacity:0.75;
+            opacity:0.7;
         }
         &-line{
             width:4rem;

@@ -1,22 +1,141 @@
 @import './variables';
-*{
-    font-family:'Courier', Courier, monospace;
+
+* {
+  font-family: 'Courier', Courier, monospace;
 }
 
-main{
-    // position: relative;
-    top:$headerHeightMobile;
+main {
+  // position: relative;
+  top: $headerHeightMobile;
+
 }
 
-a{
-    color:blue;
-    &:hover,&:active{
-        color:blue;
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: blue;
+  padding-top: none;
+
+  &:hover,
+  &:active {
+    color: blue;
+    cursor:pointer;
+    // cursor:url('../../static/img/cursors/cursor-up.png'), auto;
+
+  }
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.border-black {
+  border: 2px solid $black;
+}
+
+.header {
+  z-index: 10000;
+  // position: fixed;
+  width: 100%;
+  display: block;
+  background-color: $white;
+  padding-top: 1rem;
+
+  &-nav {
+    padding: 0 1rem 1rem 1rem;
+
+    @media (min-width: 768px) {
+      padding: 1rem;
     }
+
+    &-list {
+      list-style-type: none;
+      padding: 0;
+      display: block;
+      text-align: right;
+
+      @media (min-width: 768px) {
+        text-align: right;
+      }
+
+      &-item {
+        display: inline;
+        font-size: 2rem;
+        padding-right: 1rem;
+
+        &:hover,
+        &:active {
+          opacity: 0.7;
+          cursor: pointer;
+        //   cursor:url('../../static/img/cursors/cursor-up.png'), auto;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+          display: block;
+        }
+      }
+    }
+  }
 }
-p{
-    font-size: 1.25rem;
+
+.header,.footer {
+  z-index: 10000;
+  // position: fixed;
+  width: 100%;
+  display: block;
+  background-color: $white;
+  padding-top: 1rem;
+
+  a{
+      color:$black;
+      &:hover,&:active{
+          text-decoration: none;
+          opacity: 0.7;
+          cursor: pointer;
+      }
+  }
+
+  &-nav {
+    padding: 0 1rem 1rem 1rem;
+
+    @media (min-width: 768px) {
+      padding: 1rem;
+    }
+
+    &-list {
+      list-style-type: none;
+      padding: 0;
+      display: block;
+      text-align: right;
+
+      @media (min-width: 768px) {
+        text-align: right;
+      }
+
+      &-item {
+        display: inline;
+        font-size: 2rem;
+        padding-right: 1rem;
+
+        &:hover,
+        &:active {
+          opacity: 0.7;
+          cursor: pointer;
+        // cursor:url('../../static/img/cursors/cursor-up.png'), auto;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+          display: block;
+        }
+      }
+    }
+  }
 }
-.border-black{
-    border: 2px solid $black;
-}
+
+    // .footer-nav-link{
+    //     @extend .header-nav-list-item;
+    // }
