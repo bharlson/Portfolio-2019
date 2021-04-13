@@ -24,6 +24,29 @@
                 </div>
             </div>
         </section>
+        <section id="reflection">
+            <div class="row">
+                <div class="col">
+                    <h2>Reflection</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        As my first ever professional web project, I got a good primer on everything that can go right and wrong when building a new site. It was a very small team project and I often had to think on my feet or turn to google if I ran into issues. Having that much responsibility with only one web development class under my belt was nerve-wracking at times, but also immensely rewarding. I’m grateful for the opportunity it gave me to take what I’d learned at school and apply it in the real world for the first time, and I grew a lot over the course of that Summer
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="credit">
+            <div class="row mt-4">
+                <div class="col">
+                    <h2>Credit</h2>
+                    <p><b>Alex Korobov:</b> Visual Design, Project Direction</p>
+                    <p><b>Alex Kuksenko:</b> Project Direction</p>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 

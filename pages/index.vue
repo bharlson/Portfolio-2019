@@ -13,7 +13,7 @@
           <div class="col">
             <p>I'm a designer and front end web developer born and raised in Seattle</p>
             <p>Artist since 1994, designer since 2011, web developer since 2014.</p>
-            <p>Currently working as a digital designer at <a href="http://scotsmanguide.com">Scotsman Guide</a></p>
+            <p>Currently working as a digital designer at <nuxt-link to="scotsman-guide">Scotsman Guide</nuxt-link></p>
           </div>
         </div>
       </section>

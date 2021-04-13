@@ -124,7 +124,7 @@
             </div>
         </section>
         <section id="credit">
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col">
                     <h2>Credit</h2>
                     <p><b>Eva Wood:</b> Visual Design, Wireframes, Branding</p>

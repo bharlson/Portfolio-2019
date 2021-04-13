@@ -14,14 +14,27 @@
                     <!-- <h1>{{projectName}}</h1> -->
                     <p><b>Role:&nbsp;</b>Design, Web Development</p>
                     <p>Ask a Lender was launched in 2017 as a sister company to Scotsman Guide. Built off the longstanding connections Scotsman Guide has in the mortgage lending industry, Ask a Lender was conceived as a consumer-facing site for connecting borrowers with lenders in a free and transparent way.</p>
-                    <p>As of 2018, the company is defunct, but features originally implemented in Ask a Lender have been adapted to the newly revamped Scotsman Guide website</p>
+                    <p>As of 2018, the company is defunct, but features originally implemented in Ask a Lender have been adapted to the newly revamped <nuxt-link to="/scotsman-guide#website-redesign">Scotsman Guide website</nuxt-link></p>
                 </div>
             </div>
+            
             <div class="row">
-               <div class="col">
-                    <project-img class="justify-content-center" src="aal/aal-homepage-desktop-static.jpg"></project-img>
-               </div>
+                <div class="col-md-8">
+                    <project-img-scrollable 
+                    src="aal/aal-desktop-full.jpg"
+                    name="aal-tlp-desktop"
+                    caption="Homepage: Desktop"
+                    ></project-img-scrollable>
+                </div>
+                <div class="col-10 offset-1 offset-md-0 col-md-4">
+                    <project-img-scrollable 
+                    src="aal/aal-mobile-full.jpg"
+                    name="aal-tlp-mobile"
+                    caption="Homepage: Mobile"
+                    ></project-img-scrollable>
+                </div>
             </div>
+            
         </section>
         <section id="lender-search">
             <div class="row">
@@ -60,6 +73,27 @@
                     name="aal-tlp-mobile"
                     caption="Topic Landing Page: Mobile"
                     ></project-img-scrollable>
+                </div>
+            </div>
+        </section>
+        <section id="reflection">
+            <div class="row">
+                <div class="col">
+                    <h2>Reflection</h2>
+                    <p>Although Ask a Lender ultimately didn't succeed, it marks a key turning point in the Scotsman Guide business model towards more digital content. It was a valuable experience to see what improvements were made in the design and development process between 2017 and 2019.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section id="credit">
+            <div class="row mt-4">
+                <div class="col">
+                    <h2>Credit</h2>
+                    <p><b>Jeffrey Sabourin:</b> Design, Web Development</p>
                 </div>
             </div>
         </section>
