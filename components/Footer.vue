@@ -7,7 +7,7 @@
               </div>
               <div v-if="!home" class="col">
                   <h2 class="text-center text-md-right">
-                      <nuxt-link to="/#projects" class="footer-nav-list-item footer-projects-link" >Projects</nuxt-link>
+                      <nuxt-link to="/#projects" class="footer-nav-list-item footer-projects-link pr-0">Projects</nuxt-link>
                   </h2>
               </div>
           </div>
@@ -20,18 +20,27 @@
                   </ul>
               </div>
               <div class="col">
-                  <p class="text-center text-md-right">
+                  <!-- <p class="text-center text-md-right">
                       &copy; 2021 Bjørn Harlson 
-                  </p>
-                <p class="d-none d-md-block text-right" v-if="!home">
-                    <a href="#" v-scroll-to="'#top'">Back to Top</a>
-                </p>
+                  </p> -->
+                <ul class="footer-links list-unstyled">
+                    <li class="d-none d-md-block text-right" v-if="!home">
+                        <a href="#" v-scroll-to="'#top'">Back to Top</a>
+                    </li>
+                    <li class="d-none d-md-block text-right" v-if="!home">
+                        <nuxt-link to="/">Home</nuxt-link>
+                    </li>
+                    <li class="text-center text-md-right">
+                        &copy; 2021 Bjørn Harlson 
+                    </li>
+                </ul>
               </div>
           </div>
           <div class="row">
               <div class="col">
                   <p class="text-center d-md-none">
                       <a href="#" v-scroll-to="'#top'">Back to Top</a>
+                      <nuxt-link to="/">Home</nuxt-link>
                   </p>
               </div>
           </div>
