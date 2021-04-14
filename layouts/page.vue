@@ -22,5 +22,12 @@ export default {
 </script>
 <style style='scss'>
 @import url(../assets/scss/_variables.scss);
-
+/* .back-to-top{
+  position:absolute;
+  display:block;
+  bottom:1rem;
+  right:10px;
+  z-index: 100000;
+  background-color:red;
+} */
 </style>

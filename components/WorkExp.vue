@@ -45,8 +45,8 @@
 </script>
 
 <style lang="scss" scoped>
-    .work-exp{
+    // .work-exp{
 
-    }
+    // }
 
 </style>

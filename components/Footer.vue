@@ -5,7 +5,7 @@
               <div class="col">
                   <h2>Contact</h2>
               </div>
-              <div class="col">
+              <div v-if="!home" class="col">
                   <h2 class="text-center text-md-right">
                       <nuxt-link to="/#projects" class="footer-nav-list-item footer-projects-link" >Projects</nuxt-link>
                   </h2>
@@ -23,6 +23,16 @@
                   <p class="text-center text-md-right">
                       &copy; 2021 Bjørn Harlson 
                   </p>
+                <p class="d-none d-md-block text-right" v-if="!home">
+                    <a href="#" v-scroll-to="'#top'">Back to Top</a>
+                </p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                  <p class="text-center d-md-none">
+                      <a href="#" v-scroll-to="'#top'">Back to Top</a>
+                  </p>
               </div>
           </div>
       </div>
@@ -31,7 +41,12 @@
 
 <script>
 export default {
-    
+    props:{
+        home:{
+            type:Boolean,
+            default:false
+        }
+    }
 }
 </script>
 

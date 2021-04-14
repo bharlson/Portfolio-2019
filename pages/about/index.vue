@@ -19,21 +19,21 @@
                         <!-- <li><b>Speaks:</b> English, Spanish</li> -->
                         <li><h3 class="my-2">Frequently Asked Questions</h3></li>
                         <!-- <li><b>Favorite Foods:</b> Gyros, Tacos Al Pastor, Poke</li> -->
-                        <li><b>Are you available for freelance work?:</b> Probably, <a href="" v-scroll-to="'#contact'">let's talk</a></li>
-                        <li><b>How do you pronounce your name?:</b> <span id="name-pronunciation" @click="pronounceName()">byurn harlson</span></li>
+                        <li><b>Are you available for freelance work?:</b><br> Probably, <a href="" v-scroll-to="'#contact'">let's talk</a></li>
+                        <li><b>How do you pronounce your name?:</b> <br><a href="#" id="name-pronunciation" @click="pronounceName()">[byurn HARLson]</a></li>
                         <li><b>Have you heard of that show Vikings?:</b> Yes</li>
                     </ul>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-first order-lg-last">
                     <project-img src="about/bus-selfie-static.jpg"></project-img>
                 </div>
             </div>
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col">
                     <p>I've made art for as long as I can remember, and picked up various mediums along the way. Whenever I see something I like, I enjoy making my own version of it, and having grown up very online, learning how to make websites was a thrilling skill to pick up. </p>
                     <p>I do my best work in bursts of intense inspiration on projects I'm passionate about. Design is a neutral medium, and whenever possible I enjoy working on projects that align with what I'm passionate about.</p>
                 </div>
-            </div> -->
+            </div>
             <!--/row-->
             <div class="row">
                 <div class="col">

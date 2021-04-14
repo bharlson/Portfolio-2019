@@ -1,5 +1,5 @@
 <template>
-<header class="header">
+<header id="top" class="header">
     <div class="container">
         <div class="row">
             <div class="col-3">
