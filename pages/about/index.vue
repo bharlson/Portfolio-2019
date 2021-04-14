@@ -7,13 +7,33 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8">
-                    <h1 class="my-5">Bjørn Harlson</h1>
+                <div class="col-lg-6">
+                    <audio id="name-pronunciation" class="d-none" src="/audio/bjorn-harlson.mp3"></audio>
+                    <ul class="list-unstyled">
+                        <li><b>Name:</b> Bjørn Harlson</li>
+                        <!-- <li><b>Pronunciation:</b></li> -->
+                        <li><b>From:</b> Seattle, WA</li>
+                        <li><b>Position:</b> Digital Designer at <nuxt-link to="/scotsman-guide">Scotsman Guide</nuxt-link></li>
+                        <li><b>Favorite Tools:</b> Photoshop, Sketch, SASS, Vue.JS, Nuxt.JS, GSAP, Ableton Live</li>
+                        <li><b>Hobbies/Interests:</b> Studying languages, making music, djing, dancing to music, making memes, playing scrabble online, social and economic justice, NBA basketball</li>
+                        <!-- <li><b>Speaks:</b> English, Spanish</li> -->
+                        <li><h3 class="my-2">Frequently Asked Questions</h3></li>
+                        <!-- <li><b>Favorite Foods:</b> Gyros, Tacos Al Pastor, Poke</li> -->
+                        <li><b>Are you available for freelance work?:</b> Probably, <a href="" v-scroll-to="'#contact'">let's talk</a></li>
+                        <li><b>How do you pronounce your name?:</b> <span id="name-pronunciation" @click="pronounceName()">byurn harlson</span></li>
+                        <li><b>Have you heard of that show Vikings?:</b> Yes</li>
+                    </ul>
                 </div>
-                <div class="col-lg-4">
-
+                <div class="col-lg-6">
+                    <project-img src="about/bus-selfie-static.jpg"></project-img>
                 </div>
             </div>
+            <!-- <div class="row">
+                <div class="col">
+                    <p>I've made art for as long as I can remember, and picked up various mediums along the way. Whenever I see something I like, I enjoy making my own version of it, and having grown up very online, learning how to make websites was a thrilling skill to pick up. </p>
+                    <p>I do my best work in bursts of intense inspiration on projects I'm passionate about. Design is a neutral medium, and whenever possible I enjoy working on projects that align with what I'm passionate about.</p>
+                </div>
+            </div> -->
             <!--/row-->
             <div class="row">
                 <div class="col">
@@ -54,6 +74,9 @@ export default {
     components:{
         ProjectImg,
         WorkExp
+    },
+    mounted(){
+        // const namePronunciation = new Audio('../static/audio/bjorn-harlson.mp3')
     },
     data(){
         return{
@@ -96,6 +119,17 @@ export default {
                 }
             ],
         }
+    },
+    methods:{
+    pronounceName() {
+        var audio = document.getElementById("name-pronunciation");
+        audio.play()
+        // if (audio.paused) {
+        // audio.play();
+        // } else {
+        // audio.pause();
+        // }
+    }
     }
 }
 </script>
@@ -104,6 +138,11 @@ export default {
 @import '@/assets/scss/_variables.scss';
 li{
     font-size: 1.25rem;
+}
+#name-pronunciation{
+    &:hover{
+        cursor:url(../../static/img/cursors/play-button.png), auto;
+    }
 }
 </style>
 

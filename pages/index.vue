@@ -148,6 +148,10 @@ img{
     }
     &:hover,&:active{
         background-image: url(../assets/img/about/bus-selfie-animated.gif/);
+        background-position: right;
+        // background-blend-mode:hue;
+        // mix-blend-mode: hard-light;
+        text-shadow: 1px 2px 2px rgba(#fff,0.75);
     }
   }
 }

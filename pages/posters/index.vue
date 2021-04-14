@@ -16,20 +16,6 @@ export default {
             windowWidth:0
         }
     },
-    mounted(){
-        this.$storybridge.on('change', ()=>{
-            location.reload(true);
-        });
-        window.onresize = ()=>{
-            this.windowWidth = window.innerWidth;
-        }
-    },
-    beforeMount(){
-        this.windowWidth = window.innerWidth;
-        // window.onresize = ()=>{
-        //     this.windowWidth = window.innerWidth;
-        // }
-    }
 }
 </script>
 
