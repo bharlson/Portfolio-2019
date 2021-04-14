@@ -108,6 +108,23 @@
                     ></project-img>
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <p>Recently, I've also been working on a series of banner ads to promote Scotsman Guide's web products</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <project-img src="sgm/job-search-ad.jpg" 
+                    alt="intl-investments-germany" 
+                    ></project-img>
+                </div>
+                <div class="col-lg-8">
+                    <project-img src="sgm/originator-banner-ad-2.jpg" 
+                    alt="intl-investments-germany" 
+                    ></project-img>
+                </div>
+            </div>
         </section>
         <section id="audio">
             <div class="row">
