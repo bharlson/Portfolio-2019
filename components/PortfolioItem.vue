@@ -4,26 +4,47 @@
       <article class="portfolio-item">
           <h3>{{name}}</h3>
           <span class="overlay-text" v-if="overlayText" >{{overlayText}}</span>
-          <img 
+          <div 
+            class="portfolio-item-img-wrapper"
+            :style="
+                'background-image:url(img/loading/homepage-loading-'+loadingBg+'.gif);'+
+                'background-color:'+bgColor+';'
+              "
+          >
+            <img
+              :src="imgSelect"
+              alt=""
+              :class="{'zoom-in':imgHover, 'zoom-out':!imgHover, 'order-md-2':leftText} "
+              class="portfolio-item-img img-fluid"
+              @mouseover="imgHover = true"
+              @mouseleave="imgHover = false"
+            />
+          </div>
+          <!-- <img 
             :src="imgSelect" 
             alt="" 
             :class="{'zoom-in':imgHover, 'zoom-out':!imgHover, 'order-md-2':leftText} " 
             class="portfolio-item-img img-fluid" 
             @mouseover="imgHover = true" 
             @mouseleave="imgHover = false"
-          >
+          > -->
       </article>
     </nuxt-link>
   </div>
 </template>
 
 <script>
+// import VLazyImage from "v-lazy-image";
+
 export default {
   data(){
     return{
       imgHover:false
     }
   },
+  // components:{
+  //   VLazyImage
+  // },
   props:{
       name:{
           type: String
@@ -36,6 +57,13 @@ export default {
       },
       imgSrc:{
           type: String
+      },
+      loadingBg:{
+          type: String
+      },
+      bgColor:{
+          type: String,
+          default:'red'
       },
       staticSrc:{
           type: String
@@ -75,8 +103,20 @@ a{
 }
 .portfolio-item{
   position: relative;
-  img{
+  &-img-wrapper{
     border:2px solid $black;
+    height:215px;
+    overflow:hidden;
+    @media(min-width:$md){
+      height:202px;
+    }
+    @media(min-width:$lg){
+      height:275px;
+
+    }
+    @media(min-width:$xl){
+      height:332px;
+    }
   }
 }
 .zoom{

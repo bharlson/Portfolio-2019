@@ -71,6 +71,7 @@
                 <div class="col-md-7">
                     <project-img-scrollable
                     src="sgm/jackson-feature-full.jpg"
+                    loadingSrc="sgm/jackson-feature-full.gif"
                     name="sgm-jackson-feature"
                     caption="Feature Article, Illustration: Chuck Howard"
                     bgColor="#FAD388"
@@ -101,12 +102,15 @@
                     <project-img 
                     alt="res-spotlight-pacific-region"
                     src="sgm/pacific-northwest-spotlight.jpeg" 
+                    loadingSrc="sgm/pacific-northwest-spotlight.gif" 
                     caption="Residential Spotlight: Pacific Region"
                     preview="true"
                     ></project-img>
                 </div>
                 <div class="col-lg-6">
-                    <project-img src="sgm/germany-intl-investments.jpeg" 
+                    <project-img 
+                    src="sgm/germany-intl-investments.jpeg" 
+                    loadingSrc="sgm/germany-intl-investments.gif" 
                     alt="intl-investments-germany" 
                     caption="International Investments: Germany"
                     preview="true"
@@ -120,14 +124,18 @@
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <project-img src="sgm/job-search-ad.jpg" 
+                    <project-img 
+                    src="sgm/job-search-ad.jpg" 
+                    loadingSrc="sgm/job-search-ad.gif" 
                     alt="job-search-ad"
                     preview="true"
                     modalSize="md" 
                     ></project-img>
                 </div>
                 <div class="col-lg-8">
-                    <project-img src="sgm/originator-banner-ad-2.jpg" 
+                    <project-img 
+                    src="sgm/originator-banner-ad-2.jpg" 
+                    loadingSrc="sgm/originator-banner-ad-2.gif" 
                     alt="originator-banner-ad"
                     preview="true"
                     modalSize="lg" 

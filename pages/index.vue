@@ -33,6 +33,7 @@
         :imgSrc='item.imgSrc'
         :overlayText='item.overlayText'
         :staticSrc='item.staticSrc'
+        :bgColor='item.bgColor'
         :isMobile='mobileWidth'
         >
         </portfolio-item>
@@ -59,26 +60,31 @@ export default {
         {
           name:'Scott 2019',
           link:'scott2019',
-          imgSrc:require('@/static/img/scott2019/scott2019-desktop-animated.gif'),
-          staticSrc:require('@/static/img/scott2019/scott2019-desktop-static.jpg')
+          imgSrc:require('@/assets/img/scott2019/scott2019-desktop-animated.gif'),
+          staticSrc:require('@/assets/img/scott2019/scott2019-desktop-static.jpg'),
+          loadingBg:'scott2019',
+          bgColor:'#F52033'
         },
         {
           name:'Scotsman Guide',
           link:'scotsman-guide',
           imgSrc:require('@/assets/img/sgm/scotsmanguide-desktop-animated.gif'),
           staticSrc:require('@/assets/img/sgm/scotsmanguide-desktop-static.jpg'),
+          bgColor:'#8196C3'
         },
         {
           name:'Ask a Lender',
           link:'ask-a-lender',
           imgSrc:require('@/assets/img/aal/aal-homepage-desktop-animated.gif'),
-          staticSrc:require('@/assets/img/aal/aal-homepage-desktop-static.jpg')
+          staticSrc:require('@/assets/img/aal/aal-homepage-desktop-static.jpg'),
+          bgColor:'#E3F490'
         },
         {
           name:'Creaytive',
           link:'creaytive',
           imgSrc:require('@/assets/img/creaytive/creaytive-desktop-animated.gif'),
           staticSrc:require('@/assets/img/creaytive/creaytive-desktop-static.jpg'),
+          bgColor:'#4E83D3'
         }
       ],
       aboutPhoto:{

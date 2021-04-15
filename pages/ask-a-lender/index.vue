@@ -24,6 +24,7 @@
                     src="aal/aal-desktop-full.jpg"
                     name="aal-tlp-desktop"
                     caption="Homepage: Desktop"
+                    bgColor="#E3F490"
                     ></project-img-scrollable>
                 </div>
                 <div class="col-10 offset-1 offset-md-0 col-md-4">
@@ -31,6 +32,7 @@
                     src="aal/aal-mobile-full.jpg"
                     name="aal-tlp-mobile"
                     caption="Homepage: Mobile"
+                    bgColor="#E3F490"
                     ></project-img-scrollable>
                 </div>
             </div>
@@ -47,6 +49,7 @@
                <div class="col">
                     <project-img 
                     src="aal/LenderSearch-Animation.gif"
+                    loadingSrc="aal/LenderSearch-Animation.gif"
                     caption="Lender Search Interaction"
                     ></project-img>
                </div>

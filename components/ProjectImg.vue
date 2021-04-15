@@ -4,9 +4,14 @@
             class="figure" 
             @click="displayClass = 'd-lg-block'"
             :class="zoomClass"
-            >
-            <img :src="'/img/'+src" :alt="alt" class="img-fluid">
-        <figcaption class="text-center">{{caption}}</figcaption>
+        >
+            <v-lazy-image 
+                :src="'/img/'+src" 
+                :src-placeholder="'/img/loading/'+loadingSrc"
+                :alt="alt" 
+                class="img-fluid"
+            />
+            <figcaption class="text-center">{{caption}}</figcaption>
         </figure>
 
         <div 
@@ -21,7 +26,11 @@
                     <a class="close-btn">
                         &times;
                     </a>
-                    <img :src="'/img/'+src" alt="" class="img-fluid">
+                    <v-lazy-image 
+                        :src="'/img/'+src" 
+                        alt="" 
+                        class="img-fluid"
+                    />
                     <div class="modal-footer" v-if="caption">
                         {{caption}}
                     </div>
@@ -40,6 +49,9 @@ export default {
     },
     props:{
         src:{
+            type: String
+        },
+        loadingSrc:{
             type: String
         },
         alt:{

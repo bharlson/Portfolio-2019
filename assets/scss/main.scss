@@ -136,6 +136,16 @@ p {
   }
 }
 
+.v-lazy-image{
+  filter: blur(2px);
+  // filter:blur(1rem);
+  transition: filter opacity 0.7s;
+  // image-rendering: pixelated;
+  &-loaded{
+      filter: blur(0);
+      // image-rendering:auto;
+    }
+}
     // .footer-nav-link{
     //     @extend .header-nav-list-item;
     // }

@@ -13,6 +13,7 @@
                     <project-img-scrollable 
                     src="creaytive/creaytivehomepagetablet.png"
                     name="creaytive-desktop"
+                    bgColor="#4E83D3"
                     >
                     </project-img-scrollable>
                </div>
@@ -20,6 +21,7 @@
                     <project-img-scrollable 
                     src="creaytive/creaytivehomepagemobile.png"
                     name="creaytive-mobile"
+                    bgColor="#4E83D3"
                     ></project-img-scrollable>
                 </div>
             </div>

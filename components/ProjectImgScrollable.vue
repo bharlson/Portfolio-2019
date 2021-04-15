@@ -2,11 +2,14 @@
     <article>
         <figure>
             <div class="scrollable"
-            :style="'background-image:url('+loadingBg+');'+'background-color:'+bgColor+';'"
+            :style="
+                'background-image:url('+loadingBg+');'+
+                'background-color:'+bgColor+';'
+                "
             :class="name +' '+ zoomClass"
             @click="displayClass = 'd-lg-block'"
             >
-                <img :src="'/img/'+src" alt="caption" class="img-fluid">
+                <v-lazy-image :src="'/img/'+src" alt="caption" class="img-fluid"/>
         
             </div>
             <figcaption>{{caption}}</figcaption>
@@ -63,7 +66,8 @@ export default {
             type: String
         },
         bgColor:{
-            type: String
+            type: String,
+            default:'#h3h3h3'
         },
         alt:{
             type:String,
