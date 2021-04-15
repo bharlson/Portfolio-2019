@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <article>
         <figure 
             class="figure" 
             @click="displayClass = 'd-lg-block'"
             :class="zoomClass"
             >
             <img :src="'/img/'+src" :alt="alt" class="img-fluid">
-        <figcaption>{{caption}}</figcaption>
+        <figcaption class="text-center">{{caption}}</figcaption>
         </figure>
 
         <div 
@@ -16,19 +16,19 @@
             :class="displayClass"
             @click="displayClass = 'd-none'"
         >
-            <div class="modal-dialog modal-xl">
+            <div class="modal-dialog" :class="'modal-'+modalSize">
                 <div class="modal-content">
-                    <a class="close-btn" href="#">
+                    <a class="close-btn">
                         &times;
                     </a>
                     <img :src="'/img/'+src" alt="" class="img-fluid">
-                    <div class="modal-footer">
+                    <div class="modal-footer" v-if="caption">
                         {{caption}}
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div><!--/modal-->
+    </article>
 </template>
 
 <script>
@@ -51,6 +51,10 @@ export default {
         preview:{
             type:Boolean,
             default:false
+        },
+        modalSize:{
+            type:String,
+            default:'xl'
         }
     }
     ,
@@ -81,6 +85,7 @@ img{
     }
     .modal{
         display:auto;
+        background-color:rgba($white,0.5);
         img{
             border:none;
             border-bottom: 2px solid $black;
@@ -91,6 +96,7 @@ img{
         }
         &-footer{
             justify-content: center;
+            // padding-left:2rem;
         }
         &:hover, &:active{
             cursor:zoom-out;

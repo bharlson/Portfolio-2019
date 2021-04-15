@@ -12,8 +12,9 @@
                     <ul class="header-nav-list">
                         <nuxt-link v-if="!home" to="/#projects" tag="li" class="header-nav-list-item">Projects</nuxt-link>
                         <li v-if="home" class="header-nav-list-item" v-scroll-to="'#projects'">Projects</li>
-                        <li class="header-nav-list-item" v-scroll-to="'#contact'">Contact</li>
                         <nuxt-link to="/about" tag= "li" class="header-nav-list-item">About</nuxt-link>
+                        <li class="header-nav-list-item" v-scroll-to="'#contact'">Contact</li>
+                        <li class="header-nav-list-item"><a href="/img/BjornHarlson-Resume-0421.pdf">Resumé</a></li>
                     </ul>
                 </nav>
             </div>

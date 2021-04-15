@@ -31,6 +31,7 @@
                     src="scott2019/scott2019-final-homepage-full.jpg"
                     caption="Homepage: Desktop"
                     name="scott2019-homepage-desktop"
+                    bgColor="#F5203E"
                     ></project-img-scrollable>
                 </div>
                 <div class="col-10 offset-1 offset-md-0 col-md-4">
@@ -38,6 +39,7 @@
                     src="scott2019/scott2019-final-homepage-mobile-full.jpg"
                     caption="Homepage: Mobile"
                     name="scott2019-homepage-mobile"
+                    bgColor="#F5203E"
                     ></project-img-scrollable>
                 </div>
             </div>

@@ -4,8 +4,9 @@
       <section id="intro">
         <div class="row">
           <div class="col">
+            <p class="hello"><small>Hi, I'm </small></p>
             <nuxt-link tag="div" to="/about" class="name">
-                <h1>BJØRN HARLSON</h1>
+                <h1 class="pt-0">BJØRN HARLSON</h1>
             </nuxt-link>
           </div>
         </div>
@@ -107,9 +108,18 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-
+.hello{
+  position: absolute;
+  display: block;
+  // top:0;
+  bottom:2rem;
+  left:1rem;
+    @media (min-width: 768px){
+    top:0;
+    // left:0;
+  }
+}
 h1{
-
   font-size: 3rem;
   @media (min-width: 768px){
     font-size:7vw;

@@ -4,7 +4,14 @@
       <article class="portfolio-item">
           <h3>{{name}}</h3>
           <span class="overlay-text" v-if="overlayText" >{{overlayText}}</span>
-          <img :src="imgSelect" alt="" :class="{'zoom-in':imgHover, 'zoom-out':!imgHover, 'order-md-2':leftText} " class="portfolio-item-img img-fluid" @mouseover="imgHover = true" @mouseleave="imgHover = false">
+          <img 
+            :src="imgSelect" 
+            alt="" 
+            :class="{'zoom-in':imgHover, 'zoom-out':!imgHover, 'order-md-2':leftText} " 
+            class="portfolio-item-img img-fluid" 
+            @mouseover="imgHover = true" 
+            @mouseleave="imgHover = false"
+          >
       </article>
     </nuxt-link>
   </div>

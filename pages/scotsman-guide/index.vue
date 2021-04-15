@@ -30,6 +30,9 @@
                     src="sgm/scotsmanguide-homepage-full.jpg"
                     name="sgm-homepage-desktop"
                     caption="Homepage: Desktop"
+                    bgColor="#8196C3"
+                    alt="homepage-desktop"
+                    preview="true"
                     ></project-img-scrollable>
                 </div>
                 <div class="col-10 offset-1 offset-md-0 col-md-4">
@@ -37,6 +40,7 @@
                     src="sgm/scotsmanguide-homepage-mobile-full.jpg"
                     name="sgm-homepage-mobile"
                     caption="Homepage: Mobile"
+                    bgColor="#8196C3"
                     ></project-img-scrollable>
                 </div>
             </div>
@@ -51,7 +55,7 @@
                     </p>
                 </div>
                 <div class="col-lg-6 pt-lg-4">
-                    <project-img src="sgm/old-sgm-site.jpg" caption="Homepage: Old Website"></project-img>
+                    <project-img src="sgm/old-sgm-site.jpg" caption="Homepage: Old Website" alt="scotsman-guide-old-home-page" preview="true"></project-img>
                 </div>
             </div>
         </section>
@@ -69,6 +73,7 @@
                     src="sgm/jackson-feature-full.jpg"
                     name="sgm-jackson-feature"
                     caption="Feature Article, Illustration: Chuck Howard"
+                    bgColor="#FAD388"
                     ></project-img-scrollable>
                 </div>                
                 <div class="col-md-5">
@@ -116,12 +121,16 @@
             <div class="row">
                 <div class="col-lg-4">
                     <project-img src="sgm/job-search-ad.jpg" 
-                    alt="intl-investments-germany" 
+                    alt="job-search-ad"
+                    preview="true"
+                    modalSize="md" 
                     ></project-img>
                 </div>
                 <div class="col-lg-8">
                     <project-img src="sgm/originator-banner-ad-2.jpg" 
-                    alt="intl-investments-germany" 
+                    alt="originator-banner-ad"
+                    preview="true"
+                    modalSize="lg" 
                     ></project-img>
                 </div>
             </div>
