@@ -31,8 +31,8 @@
       </div>
       <div class="row">
         <portfolio-item 
-        v-for='item in dataSrc'
-        :key='item'
+        v-for='(item,index) in dataSrc'
+        :key='index'
         :name="item.name" 
         :link='item.link'
         :role='item.role'
@@ -175,6 +175,9 @@ img{
   @media (min-width: 768px) {
     h1{
       font-size: 7rem;
+    }
+    &:hover{
+      cursor: pointer;
     }
     &:hover,&:active{
         background-image: url(../assets/img/about/bus-selfie-animated.gif/);

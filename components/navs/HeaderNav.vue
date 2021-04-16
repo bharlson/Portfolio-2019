@@ -3,7 +3,8 @@
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <hover-area customClass="custom-cursor-home">
+                <logo v-if="home"></logo>
+                <hover-area v-if="!home" customClass="custom-cursor-home">
                     <nuxt-link class="home-link" to='/'>
                         <logo></logo>
                     </nuxt-link>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <header-nav home="true" ref="headerHeight"></header-nav>
+    <header-nav :home="true" ref="headerHeight"></header-nav>
     <main>
       <nuxt />
     </main>
-    <site-footer home="true"></site-footer>
+    <site-footer :home="true"></site-footer>
   </div>
 </template>
 <script>

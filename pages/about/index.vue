@@ -55,9 +55,10 @@
                 </div>
             </div>
            <work-exp 
-           v-for="i in workExperience" :key="i"
-           :companyName="i.companyName"
-           :location="i.location"
+           v-for="(i, index) in workExperience" 
+            :key="index"
+            :companyName="i.companyName"
+            :location="i.location"
             :start="i.start"
             :end="i.end"
             :position="i.position"

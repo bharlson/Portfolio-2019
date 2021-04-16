@@ -2,6 +2,10 @@
 
 * {
   font-family: 'Courier', Courier, monospace;
+  &::selection{
+    background:$black;
+    color:$white;
+  }
 }
 
 main {
@@ -15,12 +19,17 @@ h2 {
 }
 
 a {
-  color: blue;
+  color: $blue;
   padding-top: none;
+
+  &::selection{
+    background-color:$blue;
+    color:$white;
+  }
 
   &:hover,
   &:active {
-    color: blue;
+    color: $blue;
     cursor: pointer!important;
     // cursor:url('../../static/img/cursors/cursor-up.png'), auto;
 
@@ -64,6 +73,10 @@ p {
         display: inline;
         font-size: 2rem;
         padding-right: 1rem;
+        &::selection{
+          background-color:$blue;
+          color:$white;
+        }
 
         &:hover,
         &:active {
