@@ -21,7 +21,7 @@ a {
   &:hover,
   &:active {
     color: blue;
-    cursor:pointer;
+    cursor: pointer!important;
     // cursor:url('../../static/img/cursors/cursor-up.png'), auto;
 
   }
@@ -139,13 +139,39 @@ p {
 .v-lazy-image{
   filter: blur(2px);
   // filter:blur(1rem);
-  transition: filter opacity 0.7s;
+  transition: filter 0.7s;
   // image-rendering: pixelated;
   &-loaded{
       filter: blur(0);
       // image-rendering:auto;
     }
 }
-    // .footer-nav-link{
-    //     @extend .header-nav-list-item;
-    // }
+
+.custom-cursor{
+  pointer-events: none;
+  user-select: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  z-index: 5555;
+  backface-visibility: hidden;
+  transition: opacity .6s ease;
+  &-name{
+    &::after{
+      content:url( ../../static/img/cursors/waving-hand.png);
+    }
+  }
+  &-home{
+    &::after{
+      content:url( ../../static/img/cursors/house.png);
+    }
+  }
+  &-audio{
+    &::after{
+      content:url(../../static/img/cursors/audio.png);
+    }
+  }
+}

@@ -12,7 +12,8 @@
     background-image:url(../assets/img/BHlogo-01.svg);
     &:hover,&:active{
       background-image:url(../assets/img/BHlogo-02.svg);
-      cursor:url(../static/img/cursors/house.png), auto;
+      cursor:pointer;
+      // cursor:url(../static/img/cursors/house.png), auto;
     }
   }
 </style>

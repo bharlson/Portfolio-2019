@@ -105,7 +105,7 @@ a{
   position: relative;
   &-img-wrapper{
     border:2px solid $black;
-    height:215px;
+    height:275px;
     overflow:hidden;
     @media(min-width:$md){
       height:202px;

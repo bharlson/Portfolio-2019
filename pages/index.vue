@@ -5,9 +5,14 @@
         <div class="row">
           <div class="col">
             <p class="hello"><small>Hi, I'm </small></p>
-            <nuxt-link tag="div" to="/about" class="name">
-                <h1 class="pt-0">BJØRN HARLSON</h1>
-            </nuxt-link>
+            <hover-area customClass="custom-cursor-name">
+              <nuxt-link tag="div" to="/about" class="name">
+                  <h1 class="pt-0">BJØRN HARLSON</h1>
+              </nuxt-link>
+            </hover-area>
+              <!-- <nuxt-link tag="div" to="/about" class="name">
+                  <h1 class="pt-0">BJØRN HARLSON</h1>
+              </nuxt-link> -->
           </div>
         </div>
         <div class="row">
@@ -46,11 +51,15 @@
 <script>
 import PortfolioItem from '~/components/PortfolioItem.vue'
 import ImgHover from '~/components/ImgHover.vue'
+import CustomCursor from '~/components/CustomCursor.vue'
+import HoverArea from '~/components/HoverArea.vue'
 
 export default {
   components: {
     PortfolioItem,
-    ImgHover
+    ImgHover,
+    CustomCursor,
+    HoverArea
   },
   layout:'home',
   data(){
@@ -153,10 +162,6 @@ img{
         // mix-blend-mode:hue;
 
     }
-  }
-  &:hover,&:active{
-    cursor:url(../static/img/cursors/waving-hand.png), auto;
-
   }
   @media (min-width: 768px) {
     h1{

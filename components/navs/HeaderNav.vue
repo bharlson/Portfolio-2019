@@ -3,9 +3,11 @@
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <nuxt-link class="home-link" to='/'>
-                    <logo></logo>
-                </nuxt-link>
+                <hover-area customClass="custom-cursor-home">
+                    <nuxt-link class="home-link" to='/'>
+                        <logo></logo>
+                    </nuxt-link>
+                </hover-area>
             </div>
             <div class="col-9">
                 <nav class="header-nav">
@@ -26,6 +28,8 @@
 <script>
 import Logo from '@/components/Logo.vue'
 import HamburgerMenu from '@/components/HamburgerMenu.vue'
+import HoverArea from '@/components/HoverArea.vue'
+
 export default {
     data(){
         return{
@@ -34,7 +38,8 @@ export default {
     },
     components:{ 
         Logo,
-        HamburgerMenu
+        HamburgerMenu,
+        HoverArea
     },
     props:{
         home:{
@@ -46,7 +51,10 @@ export default {
 </script>
 
 <style lang='scss'>
+.header{
+    overflow-x:hidden;
+}
 .home-link{
-    cursor:url(../../static/img/cursors/house.png), auto;
+    // cursor:url(../../static/img/cursors/house.png), auto;
 }
 </style>

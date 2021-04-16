@@ -20,13 +20,23 @@
                         <li><h3 class="my-2">Frequently Asked Questions</h3></li>
                         <!-- <li><b>Favorite Foods:</b> Gyros, Tacos Al Pastor, Poke</li> -->
                         <li><b>Are you available for freelance work?:</b><br> Probably, <a href="" v-scroll-to="'#contact'">let's talk</a></li>
-                        <li><b>How do you pronounce your name?:</b> <br><a href="#" id="name-pronunciation" @click="pronounceName()">[byurn HARLson]</a></li>
+                        <li><b>How do you pronounce your name?:</b> <br><hover-area customClass="custom-cursor-audio"><a href="#" id="name-pronunciation" @click="pronounceName()">[byurn HARLson]</a></hover-area></li>
                         <li><b>Have you heard of that show Vikings?:</b> Yes</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 order-first order-lg-last">
-                    <project-img src="about/bus-selfie-static.jpg"></project-img>
-                </div>
+                    <!-- <project-img src="about/bus-selfie-static.jpg"></project-img> -->
+                    <div class="chomp"
+                        @mouseover="imgHover = true"
+                        @mouseleave="imgHover = false"
+                    >
+                    </div>
+                    <img
+                        class="chomp-img img-fluid border-black"
+                        :src="imgSelect"
+                        >                
+                    </div>
+                    <custom-cursor cursorClass="chomp-cursor" v-show="imgHover"/>
             </div>
             <div class="row">
                 <div class="col">
@@ -71,13 +81,19 @@
 </template>
 
 <script>
+import ImgHover from '@/components/ImgHover.vue'
+import CustomCursor from '@/components/CustomCursor.vue'
 import ProjectImg from '@/components/ProjectImg.vue'
 import WorkExp from '@/components/WorkExp.vue'
+import HoverArea from '@/components/HoverArea.vue'
 export default {
     layout:'page',
     components:{
+        ImgHover,
         ProjectImg,
-        WorkExp
+        WorkExp,
+        CustomCursor,
+        HoverArea
     },
     mounted(){
         // const namePronunciation = new Audio('../static/audio/bjorn-harlson.mp3')
@@ -85,6 +101,8 @@ export default {
     data(){
         return{
             windowWidth:0,
+            animatedSrc:'/img/about/chomp-3.gif',
+            staticSrc:'/img/about/chomp-static.jpg',
             workExperience:[
                 {
                     companyName:"<a href='/scotsman-guide'>Scotsman Guide</a>/<a href='/ask-a-lender'>Ask a Lender</a>",
@@ -122,18 +140,24 @@ export default {
                     desc:"Maintained a wordpress website for Western Washington University's Environmental Issues Magazine"
                 }
             ],
+            imgHover: false
         }
     },
+    computed:{
+      imgSelect(){
+          if(this.imgHover){
+              return this.animatedSrc
+          }
+          else{
+              return this.staticSrc
+          }
+      }
+    },
     methods:{
-    pronounceName() {
-        var audio = document.getElementById("name-pronunciation");
-        audio.play()
-        // if (audio.paused) {
-        // audio.play();
-        // } else {
-        // audio.pause();
-        // }
-    }
+        pronounceName() {
+            var audio = document.getElementById("name-pronunciation");
+            audio.play()
+        }
     }
 }
 </script>
@@ -144,8 +168,24 @@ li{
     font-size: 1.25rem;
 }
 #name-pronunciation{
-    &:hover{
-        cursor:url(../../static/img/cursors/play-button.png), auto;
+    // &:hover{
+    //     cursor:url(../../static/img/cursors/audio.png), auto;
+    // }
+}
+.chomp{
+    &-img{
+        max-height:400px;
+    }
+    // border:3px solid black;
+    height:80px;
+    width:80px;
+    position: absolute;
+    top:180px;
+    left:193px;
+    &-cursor{
+        &::after{
+        content:url(../../static/img/cursors/gyro.png);
+        }
     }
 }
 </style>

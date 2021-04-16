@@ -134,9 +134,9 @@
                 </div>
                 <div class="col-lg-8">
                     <project-img 
-                    src="sgm/originator-banner-ad-2.jpg" 
-                    loadingSrc="sgm/originator-banner-ad-2.gif" 
-                    alt="originator-banner-ad"
+                    src="sgm/originator-promo.jpg" 
+                    loadingSrc="sgm/originator-promo.gif" 
+                    alt="originator-promo"
                     preview="true"
                     modalSize="lg" 
                     ></project-img>
