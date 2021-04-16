@@ -35,6 +35,8 @@
         :key='item'
         :name="item.name" 
         :link='item.link'
+        :role='item.role'
+        :caption='item.caption'
         :imgSrc='item.imgSrc'
         :overlayText='item.overlayText'
         :staticSrc='item.staticSrc'
@@ -72,28 +74,36 @@ export default {
           imgSrc:require('@/assets/img/scott2019/scott2019-desktop-animated.gif'),
           staticSrc:require('@/assets/img/scott2019/scott2019-desktop-static.jpg'),
           loadingBg:'scott2019',
-          bgColor:'#F52033'
+          bgColor:'#F52033',
+          role:'Web Development, Design',
+          caption:'City Council Campaign Website'
         },
         {
           name:'Scotsman Guide',
           link:'scotsman-guide',
           imgSrc:require('@/assets/img/sgm/scotsmanguide-desktop-animated.gif'),
           staticSrc:require('@/assets/img/sgm/scotsmanguide-desktop-static.jpg'),
-          bgColor:'#8196C3'
+          bgColor:'#8196C3',
+          role:'Design, Web Development',
+          caption:'Lending Industry Media & Tech. Company'
         },
         {
           name:'Ask a Lender',
           link:'ask-a-lender',
           imgSrc:require('@/assets/img/aal/aal-homepage-desktop-animated.gif'),
           staticSrc:require('@/assets/img/aal/aal-homepage-desktop-static.jpg'),
-          bgColor:'#E3F490'
+          bgColor:'#E3F490',
+          role:'Design, Web Development',
+          caption:'Consumer-facing Lending Info Website'
         },
         {
           name:'Creaytive',
           link:'creaytive',
           imgSrc:require('@/assets/img/creaytive/creaytive-desktop-animated.gif'),
           staticSrc:require('@/assets/img/creaytive/creaytive-desktop-static.jpg'),
-          bgColor:'#4E83D3'
+          bgColor:'#4E83D3',
+          role:'Web Development',
+          caption:'Design and Marketing Firm'
         }
       ],
       aboutPhoto:{
@@ -126,8 +136,7 @@ export default {
 .hello{
   position: absolute;
   display: block;
-  // top:0;
-  bottom:2rem;
+  top:-1rem;
   left:1rem;
     @media (min-width: 768px){
     top:0;

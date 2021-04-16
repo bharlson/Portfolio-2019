@@ -123,7 +123,7 @@ img{
         opacity:0.5;
         mix-blend-mode: hard-light;
         text-decoration:none;
-        z-index:1000000;
+        z-index:100000;
         &:hover,&:active{
             transform:scale(1.05);
         }

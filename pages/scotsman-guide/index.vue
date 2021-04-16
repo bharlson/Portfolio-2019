@@ -11,7 +11,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p><b>Role:&nbsp;</b>Design, Web Development, Audio Engineering</p>
+                    <p><b>Role:&nbsp;</b>Design, Web Development</p>
                     <p>
                         Scotsman Guide was established in 1985 as a monthly publication serving professionals in the mortgage lending industry. The print edition has a longstanding reputation among industry professionals, and increasingly the website has become a popular source for industry data, job listings and lead generation.
                     </p>

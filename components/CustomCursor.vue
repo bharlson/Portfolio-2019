@@ -60,9 +60,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/_variables.scss';
 .g-cursor {
     &_hide {
-      
       opacity: 0;
       width: 0px;
       height: 0px;
@@ -76,18 +76,20 @@ export default {
       user-select: none;
       top: 0;
       left:0;
+      // margin-left: auto;
+      // margin-right:auto;
       position: fixed;
       width: 30px;
       height: 30px;
       border-radius: 100%;
-      z-index: 100000000;
+      z-index: 1000;
       backface-visibility: hidden;
-      transition: opacity .6s ease;
+      transition: opacity .75s ease;
     }
 
     &__point {
-      top: 0;
-      left: 0;
+      top: 10px;
+      left: 10px;
       position: fixed;
       width: 10px;
       height: 10px;
@@ -95,7 +97,7 @@ export default {
       user-select: none;
       border-radius: 100%;
       // background: #fff;
-      z-index: 55555555;
+      // z-index: 55555555;
       backface-visibility: hidden;
       will-change: transform;
     }

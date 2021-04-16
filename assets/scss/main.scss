@@ -148,17 +148,18 @@ p {
 }
 
 .custom-cursor{
-  pointer-events: none;
-  user-select: none;
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  z-index: 5555;
-  backface-visibility: hidden;
-  transition: opacity .6s ease;
+  
+  // pointer-events: none;
+  // user-select: none;
+  // top: 0;
+  // left: 0;
+  // position: fixed;
+  // width: 30px;
+  // height: 30px;
+  // border-radius: 100%;
+  // // z-index: 5555;
+  // backface-visibility: hidden;
+  // transition: opacity .6s ease;
   &-name{
     &::after{
       content:url( ../../static/img/cursors/waving-hand.png);
