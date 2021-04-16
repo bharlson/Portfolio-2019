@@ -62,8 +62,10 @@ export default {
 
 <style lang="scss">
 @import '@/assets/scss/_variables.scss';
-.footer-projects-link{
+.footer-projects-link {
+  font-size: 1.75rem;
+  @media (min-width:$md) {
     font-size: 2rem;
-    
+  }
 }
 </style>

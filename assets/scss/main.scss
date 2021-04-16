@@ -14,8 +14,11 @@ main {
 
 }
 
-h2 {
-  font-size: 2rem;
+h2,.footer-projects-link {
+  font-size: 1.75rem;
+  @media (min-width:$md) {
+    font-size: 2rem;
+  }
 }
 
 a {
@@ -44,6 +47,13 @@ p {
   border: 2px solid $black;
 }
 
+img{
+  &::selection{
+    background-blend-mode:color-burn;
+    mix-blend-mode:color-burn;
+    background-color:rgba($blue, 0.5)
+  }
+}
 .header {
   z-index: 10000;
   // position: fixed;
@@ -161,26 +171,24 @@ p {
 }
 
 .custom-cursor{
-  
-  // pointer-events: none;
-  // user-select: none;
-  // top: 0;
-  // left: 0;
-  // position: fixed;
-  // width: 30px;
-  // height: 30px;
-  // border-radius: 100%;
-  // // z-index: 5555;
-  // backface-visibility: hidden;
-  // transition: opacity .6s ease;
+  &-home{
+    &::after{
+      content:url( ../../static/img/cursors/house.png);
+    }
+  }
   &-name{
     &::after{
       content:url( ../../static/img/cursors/waving-hand.png);
     }
   }
-  &-home{
+  &-norway{
     &::after{
-      content:url( ../../static/img/cursors/house.png);
+      content:url( ../../static/img/cursors/norway.png);
+    }
+  }
+  &-rain{
+    &::after{
+      content:url( ../../static/img/cursors/rain.png);
     }
   }
   &-audio{

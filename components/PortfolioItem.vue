@@ -111,13 +111,13 @@ a{
     border:2px solid $black;
     height:auto;
     overflow:hidden;
+    min-height:200px;
     // @media(min-width:$md){
     //   height:202px;
     // }
-    // @media(min-width:$lg){
-    //   height:275px;
-
-    // }
+    @media(min-width:$lg){
+      min-height:275px;
+    }
     // @media(min-width:$xl){
     //   height:332px;
     // }

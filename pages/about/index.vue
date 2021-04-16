@@ -10,9 +10,11 @@
                 <div class="col-lg-6">
                     <audio id="name-pronunciation" class="d-none" src="/audio/bjorn-harlson.mp3"></audio>
                     <ul class="list-unstyled">
-                        <li><b>Name:</b> Bjørn Harlson</li>
+                        <hover-area customClass="custom-cursor-norway"><li><b>Name:</b> Bjørn Harlson</li></hover-area>
                         <!-- <li><b>Pronunciation:</b></li> -->
-                        <li><b>From:</b> Seattle, WA</li>
+                        <hover-area customClass="custom-cursor-rain">
+                            <li><b>From:</b> Seattle, WA</li>
+                        </hover-area>
                         <li><b>Position:</b> Digital Designer at <nuxt-link to="/scotsman-guide">Scotsman Guide</nuxt-link></li>
                         <li><b>Favorite Tools:</b> Photoshop, Sketch, SASS, Vue.JS, Nuxt.JS, GSAP, Ableton Live</li>
                         <li><b>Hobbies/Interests:</b> Studying languages, making music, djing, dancing to music, making memes, playing scrabble online, social and economic justice, NBA basketball</li>
@@ -21,7 +23,7 @@
                         <!-- <li><b>Favorite Foods:</b> Gyros, Tacos Al Pastor, Poke</li> -->
                         <li><b>Are you available for freelance work?:</b><br> Probably, <a href="" v-scroll-to="'#contact'">let's talk</a></li>
                         <li><b>How do you pronounce your name?:</b> <br><hover-area customClass="custom-cursor-audio"><a href="#" id="name-pronunciation" @click="pronounceName()">[byurn HARLson]</a></hover-area></li>
-                        <li><b>Have you heard of that show Vikings?:</b> Yes</li>
+                        <li><b>Have you heard of that show Vikings?:</b> Ja</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 order-first order-lg-last">
@@ -47,11 +49,11 @@
             </div>
             <!--/row-->
             <div class="row">
-                <div class="col-10">
+                <div class="col col-lg">
                     <h2>Work Experience</h2>
                 </div>
-                <div class="col-2">
-                    <p class="text-right"><a href="/img/BjornHarlson-Resume-0421.pdf">View Resumé</a></p>
+                <div class="co col-lg">
+                    <p class="text-md-right"><a href="/img/BjornHarlson-Resume-0421.pdf">View Resumé</a></p>
                 </div>
             </div>
            <work-exp 
@@ -188,6 +190,7 @@ li{
         content:url(../../static/img/cursors/gyro.png);
         }
     }
+
 }
 </style>
 
