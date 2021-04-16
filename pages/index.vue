@@ -150,7 +150,10 @@ h1{
   }
 }
 h2{
-  font-size: 4rem;
+  font-size: 3rem;
+    @media (min-width: 768px){
+    font-size:4rem;
+  }
 }
 p{
   font-size:1.5rem;
