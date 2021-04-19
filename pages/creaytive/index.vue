@@ -73,15 +73,15 @@ export default {
 @import '@/assets/scss/_variables.scss';
 .creaytive{
     &-desktop{
-        height:220px;
+        height:420px;
         @media (min-width: $md){
             height:480px;
         }
         @media (min-width: $lg){
-            height:418px;
+            height:540px;
         }
         @media (min-width: $xl){
-            height:500px;
+            height:628px;
         }
     }
     &-mobile{
@@ -90,10 +90,10 @@ export default {
             height:480px;
         }
         @media (min-width: $lg){
-            height:418px;
+            height:517px;
         }
         @media (min-width: $xl){
-            height:500px;
+            height:628px;
         }
     }
 }

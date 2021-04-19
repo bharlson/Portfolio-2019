@@ -44,7 +44,7 @@
                 <div class="col">
                     <!-- <h3>My Philosophy</h3> -->
                     <p>I've made art for as long as I can remember, and picked up various mediums along the way. Whenever I see something I like, I enjoy making my own version of it, and having grown up very online, learning how to make websites was a thrilling skill to pick up. </p>
-                    <p>I do my best work in bursts of intense inspiration on projects I'm passionate about. Design is a neutral medium, and whenever possible I enjoy working on projects that align with what I'm passionate about.</p>
+                    <p>I do my best work in bursts of intense inspiration on projects I'm passionate about. I see design as a neutral medium of communication, and I prefer to work on projects where I can stand by the message my work is communicating.</p>
                 </div>
             </div>
             <!--/row-->
