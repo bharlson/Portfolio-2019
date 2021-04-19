@@ -54,55 +54,55 @@ img{
     background-color:rgba($blue, 0.5)
   }
 }
-.header {
-  z-index: 10000;
-  // position: fixed;
-  width: 100%;
-  display: block;
-  background-color: $white;
-  padding-top: 1rem;
+// .header {
+//   z-index: 10000;
+//   // position: fixed;
+//   width: 100%;
+//   display: block;
+//   background-color: $white;
+//   padding-top: 1rem;
 
-  &-nav {
-    padding: 0 1rem 1rem 1rem;
+//   &-nav {
+//     padding: 0 1rem 1rem 1rem;
 
-    @media (min-width: 768px) {
-      padding: 1rem;
-    }
+//     @media (min-width: 768px) {
+//       padding: 1rem;
+//     }
 
-    &-list {
-      list-style-type: none;
-      padding: 0;
-      display: block;
-      text-align: right;
+//     &-list {
+//       list-style-type: none;
+//       padding: 0;
+//       display: block;
+//       text-align: right;
 
-      @media (min-width: 768px) {
-        text-align: right;
-      }
+//       @media (min-width: 768px) {
+//         text-align: right;
+//       }
 
-      &-item {
-        display: inline;
-        font-size: 2rem;
-        padding-right: 1rem;
-        &::selection{
-          background-color:$blue;
-          color:$white;
-        }
+//       &-item {
+//         display: inline;
+//         font-size: 2rem;
+//         padding-right: 1rem;
+//         &::selection{
+//           background-color:$blue;
+//           color:$white;
+//         }
 
-        &:hover,
-        &:active {
-          opacity: 0.7;
-          cursor: pointer;
-        //   cursor:url('../../static/img/cursors/cursor-up.png'), auto;
-        }
+//         &:hover,
+//         &:active {
+//           opacity: 0.7;
+//           cursor: pointer;
+//         //   cursor:url('../../static/img/cursors/cursor-up.png'), auto;
+//         }
 
-        @media (max-width: 768px) {
-          font-size: 1.5rem;
-          display: block;
-        }
-      }
-    }
-  }
-}
+//         @media (max-width: 768px) {
+//           font-size: 1.5rem;
+//           display: block;
+//         }
+//       }
+//     }
+//   }
+// }
 
 .header,.footer {
   z-index: 10000;
@@ -124,7 +124,7 @@ img{
   &-nav {
     padding: 0 1rem 1rem 1rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: $lg) {
       padding: 1rem;
     }
 
@@ -134,25 +134,31 @@ img{
       display: block;
       text-align: right;
 
-      @media (min-width: 768px) {
+      @media (min-width: $lg) {
         text-align: right;
       }
 
       &-item {
-        display: inline;
-        font-size: 2rem;
+ 
+        font-size: 1.5rem;
         padding-right: 1rem;
+
+        
 
         &:hover,
         &:active {
           opacity: 0.7;
           cursor: pointer;
-        // cursor:url('../../static/img/cursors/cursor-up.png'), auto;
         }
-
-        @media (max-width: 768px) {
-          font-size: 1.5rem;
-          display: block;
+        display: block;
+        @media (min-width: $md) {
+          margin-top: 1.25rem;
+          display: inline-block;
+          
+        }
+        @media (min-width: $lg) {
+          font-size: 2rem;
+          margin-top: 0;
         }
       }
     }
