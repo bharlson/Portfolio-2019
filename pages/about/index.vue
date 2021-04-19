@@ -49,11 +49,11 @@
             </div>
             <!--/row-->
             <div class="row">
-                <div class="col col-md-8">
+                <div class="col-12 col-md-8">
                     <h2>Work Experience</h2>
                 </div>
                 <div class="col col-md-4">
-                    <p class="text-lg-right"><a href="/img/BjornHarlson-Resume-0421.pdf">View Resumé</a></p>
+                    <p><a href="/img/BjornHarlson-Resume-0421.pdf">View Resumé</a></p>
                 </div>
             </div>
            <work-exp 
