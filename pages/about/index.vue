@@ -34,7 +34,7 @@
                     >
                     </div>
                     <img
-                        class="chomp-img img-fluid border-black"
+                        class="chomp-img img-fluid border-black mb-4"
                         :src="imgSelect"
                         >                
                     </div>
@@ -49,11 +49,11 @@
             </div>
             <!--/row-->
             <div class="row">
-                <div class="col col-lg">
+                <div class="col col-md-8">
                     <h2>Work Experience</h2>
                 </div>
-                <div class="co col-lg">
-                    <p class="text-md-right"><a href="/img/BjornHarlson-Resume-0421.pdf">View Resumé</a></p>
+                <div class="col col-md-4">
+                    <p class="text-lg-right"><a href="/img/BjornHarlson-Resume-0421.pdf">View Resumé</a></p>
                 </div>
             </div>
            <work-exp 

@@ -5,7 +5,7 @@
                 <div class="col-md-6 col-lg-4"><h1>{{projectName}}</h1></div>
                 <div class="col-md">
                     <p class="pt-md-3">
-                        <a href="https://web.archive.org/web/20180701133149/https://www.askalender.com/">View Site (Archived)</a>
+                        <a href="https://web.archive.org/web/20180701133149/https://www.askalender.com/">Visit Site (Archived)</a>
                     </p>
                 </div>
             </div>
