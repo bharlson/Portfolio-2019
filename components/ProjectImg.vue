@@ -11,7 +11,7 @@
                 :alt="alt" 
                 class="img-fluid"
             />
-            <figcaption class="text-center">{{caption}}</figcaption>
+            <figcaption class="text-center" v-html="caption"></figcaption>
         </figure>
 
         <div 
@@ -23,7 +23,7 @@
         >
             <div class="modal-dialog" :class="'modal-'+modalSize">
                 <div class="modal-content">
-                    <a class="close-btn">
+                    <a class="close-btn" :class="{'close-btn-light':light}">
                         &times;
                     </a>
                     <v-lazy-image 
@@ -67,6 +67,10 @@ export default {
         modalSize:{
             type:String,
             default:'xl'
+        },
+        light:{
+            type:Boolean,
+            default:false
         }
     }
     ,
@@ -98,6 +102,7 @@ img{
     .modal{
         display:auto;
         background-color:rgba($white,0.5);
+        overflow: scroll;
         img{
             border:none;
             border-bottom: 2px solid $black;
@@ -126,6 +131,12 @@ img{
         z-index:100000;
         &:hover,&:active{
             transform:scale(1.05);
+        }
+        &-light{
+            color:$white;
+            &:hover,&:active{
+                color: rgba($white,0.5);
+            }
         }
         // transition:transform 0.2s;
     }

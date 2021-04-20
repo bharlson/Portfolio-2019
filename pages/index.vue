@@ -104,6 +104,15 @@ export default {
           bgColor:'#4E83D3',
           role:'Web Development',
           caption:'Design and Marketing Firm'
+        },
+        {
+          name:'Memes',
+          link:'memes',
+          imgSrc:require('@/assets/img/memes/meme-project-img-animated.gif'),
+          staticSrc:require('@/assets/img/memes/meme-project-img-static.jpg'),
+          bgColor:'#4E83D3',
+          role:'Design',
+          caption:'Fun with photoshop'
         }
       ],
       aboutPhoto:{
