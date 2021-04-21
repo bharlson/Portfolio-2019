@@ -2,11 +2,12 @@
     <div class="container">
         <section id="intro">
             <div class="row">
-                <div class="col"><h1>{{projectName}}</h1></div>
+                <div class="col"><h1>{{pageTitle}}</h1></div>
             </div>
             <div class="row">
                 <div class="col-md-9">
                     <p><b>Role:&nbsp;</b>Design, Web Development</p>
+                    <!-- <p><b>Tools:&nbsp;</b>Adobe CC, Sketch, Bootstrap, Vue JS</p> -->
                 </div>
                 <div class="col-md">                    
                     <p class="text-md-right">
@@ -192,7 +193,12 @@ export default {
     },
     data(){
         return{
-            projectName:'Scotsman Guide'
+            pageTitle:'Scotsman Guide'
+        }
+    },
+    head(){
+        return{
+            title:'Bjørn Harlson | '+this.pageTitle
         }
     }
 }

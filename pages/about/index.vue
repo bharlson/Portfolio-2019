@@ -22,7 +22,7 @@
                         <li><h3 class="my-2">Frequently Asked Questions</h3></li>
                         <!-- <li><b>Favorite Foods:</b> Gyros, Tacos Al Pastor, Poke</li> -->
                         <li><b>Are you available for freelance work?:</b><br> Probably, <a href="" v-scroll-to="'#contact'">let's talk</a></li>
-                        <li><b>How do you pronounce your name?:</b> <br><hover-area customClass="custom-cursor-audio"><a href="#" id="name-pronunciation" @click="pronounceName()">[byurn HARLson]</a></hover-area></li>
+                        <li><b>How do you pronounce your name?:</b> <br><hover-area customClass="custom-cursor-audio"><a id="name-pronunciation" @click="pronounceName()">[byurn HARLson]</a></hover-area></li>
                         <li><b>Have you heard of that show Vikings?:</b> Ja</li>
                     </ul>
                 </div>
@@ -53,7 +53,7 @@
                     <h2>Work Experience</h2>
                 </div>
                 <div class="col col-md-4">
-                    <p><a href="/img/BjornHarlson-Resume-0421.pdf">View Resumé</a></p>
+                    <p class="mt-md-2"><a href="/img/BjornHarlson-Resume-0421.pdf">View Resumé</a></p>
                 </div>
             </div>
            <work-exp 
@@ -110,26 +110,35 @@ export default {
                 {
                     companyName:"<a href='/scotsman-guide'>Scotsman Guide</a>/<a href='/ask-a-lender'>Ask a Lender</a>",
                     location: "Bothell, WA",
-                    start: "2017",
+                    start: "Apr.2017",
                     end: "Present",
                     position: "Digital Designer",
                     desc:"Works on a variety of design and web development projects including: image production for web and print editorial use, user interface design, prototyping, HTML email creation, and front end web development."
                 }
                 ,
                 {
+                    companyName:"<a href='/nikkita4nine'>Nikkita 4 Nine</a>",
+                    location: "Seattle, WA",
+                    start: "Mar. 2021",
+                    end: "Present",
+                    position: "Web Developer (Freelance)",
+                    desc:"Built a campaign site for a local city council campaign using Nuxt.js, currently restructuring the site to use the headless CMS storyblok."
+                }
+                ,
+                {
                     companyName:"<a href='/scott2019'>Shaun Scott for Seattle City Council 2019</a>",
                     location: "Seattle, WA",
-                    start: "2018",
-                    end: "2019",
-                    position: "Web Developer",
-                    desc:"Built and maintained a website for a local city council campaign. Designed assets and page layouts as needed."
+                    start: "Nov. 2018",
+                    end: "Dec. 2019",
+                    position: "Web Developer (Freelance)",
+                    desc:"Built and maintained a website for a local city council campaign using Nuxt.js. Designed assets and page layouts as needed."
                 }
                 ,
                 {
                     companyName:"<a href='/creaytive'>Creaytive Inc.</a>",
                     location: "Bellingham, WA",
-                    start: "2016",
-                    end: "",
+                    start: "Jun. 2016",
+                    end: "Aug. 2016",
                     position: "Web Development Intern",
                     desc:"Designed and built websites to meet client needs. Gained skills using Wordpress and writing HTML, CSS, and Jquery."
                 }
@@ -137,8 +146,8 @@ export default {
                 {
                     companyName:"The Planet Magazine",
                     location: "Bellingham, WA",
-                    start: "2015",
-                    end: "2016",
+                    start: "Apr. 2016",
+                    end: "Dec. 2016",
                     position: "Web Developer",
                     desc:"Maintained a wordpress website for Western Washington University's Environmental Issues Magazine"
                 }
@@ -171,9 +180,11 @@ li{
     font-size: 1.25rem;
 }
 #name-pronunciation{
-    // &:hover{
-    //     cursor:url(../../static/img/cursors/audio.png), auto;
-    // }
+    color:$blue;
+    &:hover{
+        cursor:pointer;
+        text-decoration: underline;
+    }
 }
 .chomp{
     &-img{

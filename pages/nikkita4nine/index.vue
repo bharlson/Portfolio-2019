@@ -2,7 +2,7 @@
     <div class="container">
         <section id="intro">
             <div class="row">
-                <div class="col-md-9 col-lg-7 col-xl-5"><h1>{{projectName}}</h1></div>
+                <div class="col-md-9 col-lg-7 col-xl-5"><h1>{{pageTitle}}</h1></div>
 
             </div>
             <div class="row">
@@ -36,6 +36,7 @@
             </div>
             <div class="row">
                 <div class="col">
+                    <p>In early 2021, an old coworker from the Shaun Scott campaign texted me about doing another website for a new candidate. I said yes on a whim as I was due for a new freelance project. I was excited to find out the "new candidate" was actually a local hero of mine: activist, lawyer, poet and former mayoral candidate Nikkita K.O. Oliver.</p>
                     <p>
                         With the time crunch before the campaign launch, I started the site as a static nuxt.js project the same way as I had with Shaun Scott's site. With the help of my friend and co-developer Tariku Allen
                     </p>
@@ -66,7 +67,12 @@ export default {
     data(){
         return{
             windowWidth:0,
-            projectName:'Nikkita 4 Nine'
+            pageTitle:'Nikkita 4 Nine'
+        }
+    },
+    head(){
+        return{
+            title:'Bjørn Harlson | '+this.pageTitle
         }
     }
 }

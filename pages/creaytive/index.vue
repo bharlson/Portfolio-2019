@@ -3,12 +3,17 @@
         <section id="intro">
             <div class="row">
                 <div class="col">
-                    <h1>Creaytive</h1>
+                    <h1>{{pageTitle}}</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <p><b>Role:&nbsp;</b>Web Development</p>
+                </div>
+                <div class="col-md">
+                    <p class="text-md-right">
+                        <a href="https://web.archive.org/web/20161002105637/http://creaytive.com/">Visit Site (Archived)</a>
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -73,7 +78,13 @@ export default {
     },
     data(){
         return{
-            windowWidth:0
+            windowWidth:0,
+            pageTitle:'Creaytive'
+        }
+    },
+    head(){
+        return{
+            title:'Bjørn Harlson | '+this.pageTitle
         }
     }
 }

@@ -2,11 +2,10 @@
     <div class="container">
         <section id="intro">
             <div class="row">
-                <div class="col-md-6 col-lg-4"><h1>{{projectName}}</h1></div>
+                <div class="col-md-6 col-lg-4"><h1>{{pageTitle}}</h1></div>
             </div>
             <div class="row">
                 <div class="col">
-                    <!-- <h1>{{projectName}}</h1> -->
                     <p><b>Role:&nbsp;</b>Design, Web Development</p>
                 </div>
                 <div class="col-md">
@@ -118,7 +117,12 @@ export default {
     },
     data(){
         return{
-            projectName:'Ask A Lender'
+            pageTitle:'Ask A Lender'
+        }
+    },
+    head(){
+        return{
+            title:'Bjørn Harlson | '+this.pageTitle
         }
     }
 }

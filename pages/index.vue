@@ -124,7 +124,7 @@ export default {
           link:'memes',
           imgSrc:require('@/assets/img/memes/meme-project-img-animated.gif'),
           staticSrc:require('@/assets/img/memes/meme-project-img-static.jpg'),
-          bgColor:'#4E83D3',
+          bgColor:'#F4F4F8',
           role:'Design',
           caption:'Personal projects, fun with photoshop'
         }

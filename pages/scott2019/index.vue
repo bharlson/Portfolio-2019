@@ -3,7 +3,7 @@
         <section id="intro">
             <div class="row">
                 <div class="col">
-                    <h1>Scott 2019</h1>
+                    <h1>{{pageTitle}}</h1>
                 </div>
             </div>
             <div class="row">
@@ -148,7 +148,13 @@ export default {
     },
     data(){
         return{
-            template:'project'
+            template:'project',
+            pageTitle: 'Scott 2019'
+        }
+    },
+    head(){
+        return{
+            title:'Bjørn Harlson | '+this.pageTitle
         }
     }
 }

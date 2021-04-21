@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <p>As a proud #millennial designer and lover of satirical humor, I make memes from time to time to practice my photoshop skills. Anyone can put impact text over a cat photo, but it takes a trained designer to make a convincing mockup of Ivanka Trump holding a guitar pedal. As silly as it is, I feel some of my best design work can be seen in memes I've made.</p>
+        <p>As a <hover-area-inline class="millennial" customClass="custom-cursor-millennial">#millennial</hover-area-inline> designer and lover of satirical humor, I make memes from time to time to practice my photoshop skills. Anyone can put impact text over a cat photo, but it takes a trained designer to make a convincing mockup of Ivanka Trump holding a guitar pedal. As silly as it is, I feel some of my best design work can be seen in memes I've made.</p>
       </div>
     </div>
     <div class="row">
@@ -54,20 +54,30 @@
 <script>
   import ProjectImg from '@/components/ProjectImg.vue'
   import ProjectImgScrollable from '@/components/ProjectImgScrollable.vue'
+  import HoverAreaInline from '@/components/HoverAreaInline.vue'
   export default {
     layout: 'page',
     components: {
       ProjectImg,
-      ProjectImgScrollable
+      ProjectImgScrollable,
+      HoverAreaInline
     },
     data() {
       return {
-        windowWidth: 0
+        windowWidth: 0,
+        pageTitle: 'Memes'
       }
     },
+    head(){
+        return{
+            title:'Bjørn Harlson | '+this.pageTitle
+        }
+    }
   }
 </script>
 
-<style>
-
+<style lang="scss">
+  // .millennial{
+  //     font-family: "Comic Sans MS", "Comic Sans", cursive;
+  // }
 </style>
