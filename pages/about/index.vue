@@ -74,8 +74,8 @@
            <work-exp
             companyName="Western Washington University"
             location="Bellingham, WA"
-            start="2014"
-            end="2016"
+            start="Sept. 2014"
+            end="Dec. 2016"
             position="BA: Design, Minor: Audio Technology, Music and Society"
             desc="Focus: Web Design, Music Production"
            ></work-exp>
