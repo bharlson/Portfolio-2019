@@ -25,7 +25,7 @@
       </div>
       <div class="col-lg-6">
         <project-img src="/memes/tao-capitalism.jpg" preview="true"
-          caption="Day trading is a deeply spiritual activity" />
+          caption="Day trading is actually a deeply spiritual activity" />
       </div>
 
     </div>

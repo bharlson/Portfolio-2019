@@ -24,7 +24,7 @@
                       &copy; 2021 Bjørn Harlson 
                   </p> -->
                 <ul class="footer-links list-unstyled">
-                    <li class="text-right" v-if="!home">
+                    <li class="text-right">
                         <a href="#" v-scroll-to="'#top'">Back to Top</a>
                     </li>
                     <li class="text-right" v-if="!home">

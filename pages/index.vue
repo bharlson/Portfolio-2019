@@ -69,16 +69,6 @@ export default {
       windowWidth:0,
       dataSrc:[
         {
-          name:'Scott 2019',
-          link:'scott2019',
-          imgSrc:require('@/assets/img/scott2019/scott2019-desktop-animated.gif'),
-          staticSrc:require('@/assets/img/scott2019/scott2019-desktop-static.jpg'),
-          loadingBg:'scott2019',
-          bgColor:'#F52033',
-          role:'Web Development, Design',
-          caption:'City Council Campaign Website'
-        },
-        {
           name:'Scotsman Guide',
           link:'scotsman-guide',
           imgSrc:require('@/assets/img/sgm/scotsmanguide-desktop-animated.gif'),
@@ -88,7 +78,29 @@ export default {
           caption:'Lending Industry Media & Tech. Company'
         },
         {
+          name:'Nikkita 4 Nine',
+          alt:'Nikkita 4 Nine',
+          link:'nikkita4nine',
+          imgSrc:require('@/assets/img/nikkita4nine/Nikkita4Nine-home-animated.gif'),
+          staticSrc:require('@/assets/img/nikkita4nine/Nikkita4Nine-home-static.jpg'),
+          bgColor:'#f0f0f0',
+          role:'Web Development, Design',
+          caption:'City Council Campaign Website'
+        },
+        {
+          name:'Scott 2019',
+          alt:'Scott 2019',
+          link:'scott2019',
+          imgSrc:require('@/assets/img/scott2019/scott2019-desktop-animated.gif'),
+          staticSrc:require('@/assets/img/scott2019/scott2019-desktop-static.jpg'),
+          loadingBg:'scott2019',
+          bgColor:'#F52033',
+          role:'Web Development, Design',
+          caption:'City Council Campaign Website'
+        },
+        {
           name:'Ask a Lender',
+          alt:'Ask a Lender',
           link:'ask-a-lender',
           imgSrc:require('@/assets/img/aal/aal-homepage-desktop-animated.gif'),
           staticSrc:require('@/assets/img/aal/aal-homepage-desktop-static.jpg'),
@@ -98,6 +110,7 @@ export default {
         },
         {
           name:'Creaytive',
+          alt:'Creaytive',
           link:'creaytive',
           imgSrc:require('@/assets/img/creaytive/creaytive-desktop-animated.gif'),
           staticSrc:require('@/assets/img/creaytive/creaytive-desktop-static.jpg'),
@@ -107,12 +120,13 @@ export default {
         },
         {
           name:'Memes',
+          alt:'Memes',
           link:'memes',
           imgSrc:require('@/assets/img/memes/meme-project-img-animated.gif'),
           staticSrc:require('@/assets/img/memes/meme-project-img-static.jpg'),
           bgColor:'#4E83D3',
           role:'Design',
-          caption:'Fun with photoshop'
+          caption:'Personal projects, fun with photoshop'
         }
       ],
       aboutPhoto:{

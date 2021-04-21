@@ -2,28 +2,35 @@
     <div class="container">
         <section id="intro">
             <div class="row">
+                <div class="col-md-9 col-lg-7 col-xl-5"><h1>{{projectName}}</h1></div>
+
+            </div>
+            <div class="row">
                 <div class="col">
-                    <h1>Nikkita 4 Nine</h1>
-                    <p><b>Role:&nbsp;</b>Web Development</p>
-                    <p>
-                        In early 2021, I got a call from one of my former contacts on the <nuxt-link to="scott2019">Shaun Scott campaign</nuxt-link> about another candidate in need of website, none other than poet, activist and former Seattle mayoral candidate Nikkita K.O. Oliver. I immediately accepted.
-                    </p>
+                    <p><b>Role:&nbsp;</b>Web Development, Design</p>
+                </div>
+                <div class="col-md">                    
+                    <p class="text-md-right">
+                        <a href="https://www.nikkita4nine.com" target="_blank">Visit Site</a>
+                    </p> 
                 </div>
             </div>
             <div class="row">
                <div class="col-md-8">
                     <project-img-scrollable 
-                    src="creaytive/creaytivehomepagetablet.png"
+                    src="nikkita4nine/nikkita4nine-desktop-home-full.jpg"
                     name="nikkita4nine-desktop"
-                    bgColor="#4E83D3"
+                    caption="Homepage: Desktop"
+                    bgColor="#f0f0f0"
                     >
                     </project-img-scrollable>
                </div>
                 <div class="col-10 offset-1 offset-md-0 col-md-4">
                     <project-img-scrollable 
-                    src="creaytive/creaytivehomepagemobile.png"
+                    src="/nikkita4nine/nikkita4nine-mobile-home-full.jpg"
                     name="nikkita4nine-mobile"
-                    bgColor="#4E83D3"
+                    caption="Homepage: Mobile"
+                    bgColor="#f0f0f0"
                     ></project-img-scrollable>
                 </div>
             </div>
@@ -58,7 +65,8 @@ export default {
     },
     data(){
         return{
-            windowWidth:0
+            windowWidth:0,
+            projectName:'Nikkita 4 Nine'
         }
     }
 }
@@ -68,27 +76,27 @@ export default {
 @import '@/assets/scss/_variables.scss';
 .nikkita4nine{
     &-desktop{
-        height:420px;
+        height:360px;
         @media (min-width: $md){
             height:480px;
         }
         @media (min-width: $lg){
-            height:540px;
+            height:500px;
         }
         @media (min-width: $xl){
-            height:628px;
+            height:627px;
         }
     }
     &-mobile{
-        height:530px;
+        height:500px;
         @media (min-width: $md){
             height:480px;
         }
         @media (min-width: $lg){
-            height:517px;
+            height:500px;
         }
         @media (min-width: $xl){
-            height:628px;
+            height:627px;
         }
     }
 }

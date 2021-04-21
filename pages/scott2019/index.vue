@@ -2,29 +2,22 @@
     <div class="container">
         <section id="intro">
             <div class="row">
-                <div class="col-md-5 col-lg-4 col-xl-3">
+                <div class="col">
                     <h1>Scott 2019</h1>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <p><b>Role:&nbsp;</b>Web Development, Design</p>
+                </div>
                 <div class="col-md">                    
-                    <p class="pt-md-3">
+                    <p class="text-md-right">
                         <a href="http://scott2019.bjornharlson.com" target="_blank">Visit Site</a>
                     </p> 
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <p><b>Role:&nbsp;</b>Web Development, Design</p>
-                    <p>Over the course of 2019, I built and managed the website for Shaun Scott's campaign for Seattle City Council.</p>
-                    <p>Around the same time I started working on the campaign site, I was learning vue.js for my work at Scotsman Guide. I took it as an opportunity to reinforce what I was learning, and built out the site using nuxt.js, a vue powered static site generator.</p>
-                </div>
-            </div>
         </section>
         <section id="final-site">
-            <div class="row">
-                <div class="col">
-                    <!-- <p v-html="images[1].text"></p> -->
-                </div>
-            </div>
             <div class="row">
                 <div class="col-md-8">
                     <project-img-scrollable
@@ -41,6 +34,12 @@
                     name="scott2019-homepage-mobile"
                     bgColor="#F5203E"
                     ></project-img-scrollable>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                                        <p>Over the course of 2019, I built and managed the website for Shaun Scott's campaign for Seattle City Council.</p>
+                    <p>Around the same time I started working on the campaign site, I was learning vue.js for my work at Scotsman Guide. I took it as an opportunity to reinforce what I was learning, and built out the site using nuxt.js, a vue powered static site generator.</p>
                 </div>
             </div>
         </section>

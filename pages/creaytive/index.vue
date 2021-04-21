@@ -4,8 +4,11 @@
             <div class="row">
                 <div class="col">
                     <h1>Creaytive</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <p><b>Role:&nbsp;</b>Web Development</p>
-                    <p>Over the summer of 2016 I worked as the sole web development intern for the startup marketing firm Creaytive Inc. My first project working there was to rebuild the company's website. Initially the company site was built in wordpress using a series of plugins that gave the site an excessively long load time and inconsistent design scheme. Working off design comps created by the owner, Alex Korobov, I was tasked with rebuilding the site manually without using a CMS.</p>
                 </div>
             </div>
             <div class="row">
@@ -14,6 +17,7 @@
                     src="creaytive/creaytivehomepagetablet.png"
                     name="creaytive-desktop"
                     bgColor="#4E83D3"
+                    caption="Homepage: Desktop"
                     >
                     </project-img-scrollable>
                </div>
@@ -22,7 +26,13 @@
                     src="creaytive/creaytivehomepagemobile.png"
                     name="creaytive-mobile"
                     bgColor="#4E83D3"
+                    caption="Homepage: Mobile"
                     ></project-img-scrollable>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Over the summer of 2016 I worked as the sole web development intern for the startup marketing firm Creaytive Inc. My first project working there was to rebuild the company's website. Initially the company site was built in wordpress using a series of plugins that gave the site an excessively long load time and inconsistent design scheme. Working off design comps created by the owner, Alex Korobov, I was tasked with rebuilding the site manually without using a CMS.</p>
                 </div>
             </div>
         </section>
