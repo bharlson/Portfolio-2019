@@ -5,11 +5,11 @@
         <div class="row">
           <div class="col">
             <p class="hello"><small>Hi, I'm </small></p>
-            <hover-area customClass="custom-cursor-name">
-              <nuxt-link tag="div" to="/about" class="name">
+            <nuxt-link tag="div" to="/about" class="name">
+            <hover-area-inline customClass="custom-cursor-name">
                   <h1 class="pt-0">BJØRN HARLSON</h1>
-              </nuxt-link>
-            </hover-area>
+            </hover-area-inline>
+            </nuxt-link>
               <!-- <nuxt-link tag="div" to="/about" class="name">
                   <h1 class="pt-0">BJØRN HARLSON</h1>
               </nuxt-link> -->
@@ -55,13 +55,15 @@ import PortfolioItem from '~/components/PortfolioItem.vue'
 import ImgHover from '~/components/ImgHover.vue'
 import CustomCursor from '~/components/CustomCursor.vue'
 import HoverArea from '~/components/HoverArea.vue'
+import HoverAreaInline from '~/components/HoverAreaInline.vue'
 
 export default {
   components: {
     PortfolioItem,
     ImgHover,
     CustomCursor,
-    HoverArea
+    HoverArea,
+    HoverAreaInline
   },
   layout:'home',
   data(){
