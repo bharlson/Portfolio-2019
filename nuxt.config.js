@@ -51,35 +51,8 @@ module.exports = {
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/,
     '@nuxtjs/axios',
-    'bootstrap-vue/nuxt',    
-    ['storyblok-nuxt', {
-      accessToken:
-        process.env.NODE_ENV == 'production'
-        ? '2n3obJaIQxp8eUfmQAtFiwtt'
-        : 'jxWxKMXP01QfdxGiP4QrQgtt',
-      cacheProvider:'memory'
-    }],
+    'bootstrap-vue/nuxt'
   ],
-
-  // generate:{
-  //   routes: function(){
-  //     return axios.get('https://api.storyblok.com/v1/cdn/stories?version=published&token=2n3obJaIQxp8eUfmQAtFiwtt&cv=' + Math.floor(Date.now()/1e3)
-  //     )
-  //     .then(res =>{
-  //       return [
-  //         '/',
-  //         '/scott2019',
-  //         '/creaytive',
-  //         '/posters', 
-  //         '/logos',
-  //         '/about',
-  //         '/scotsman-guide',
-  //         '/ask-a-lender'
-  //       ]
-  //     })
-  //   }
-  // },
-
 
   router: {
     extendRoutes (routes, resolve) {
