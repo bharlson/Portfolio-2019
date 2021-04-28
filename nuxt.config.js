@@ -52,15 +52,15 @@ module.exports = {
     ['storyblok-nuxt', {
       accessToken:
         process.env.NODE_ENV == 'production'
-        ? '2n3obJaIQxp8eUfmQAtFiwtt'
-        : 'jxWxKMXP01QfdxGiP4QrQgtt',
+        ? process.env.STORYBLOK_PUBLIC
+        : process.env.STORYBLOK_PREVIEW,
       cacheProvider:'memory'
     }],
   ],
 
   generate:{
     routes: function(){
-      return axios.get('https://api.storyblok.com/v1/cdn/stories?version=published&token=2n3obJaIQxp8eUfmQAtFiwtt&cv=' + Math.floor(Date.now()/1e3)
+      return axios.get(process.env.STORYBLOK_GENERATE + Math.floor(Date.now()/1e3)
       )
       .then(res =>{
         return [
