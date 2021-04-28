@@ -110,7 +110,7 @@
         workExperience: [{
             companyName: "<a href='/scotsman-guide'>Scotsman Guide</a>/<a href='/ask-a-lender'>Ask a Lender</a>",
             location: "Bothell, WA",
-            start: "Apr.2017",
+            start: "Apr. 2017",
             end: "Present",
             position: "Digital Designer",
             desc: "Works on a variety of design and web development projects including: image production for web and print editorial use, user interface design, prototyping, HTML email creation, and front end web development."
