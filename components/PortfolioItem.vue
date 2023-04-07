@@ -2,23 +2,47 @@
   <div class="col-md-6 mb-4">
     <nuxt-link :to="{path:link}">
       <article class="portfolio-item">
-          <h3>{{name}}</h3>
+          <h3 class="mb-0 pb-0">{{name}}</h3>
+          <span class="portfolio-item-role" v-if="role">
+            <b>Role:</b> {{role}}
+          </span>
           <span class="overlay-text" v-if="overlayText" >{{overlayText}}</span>
-          <a href="#">
-            <img :src="imgSelect" alt="" :class="{'zoom-in':imgHover, 'zoom-out':!imgHover, 'order-md-2':leftText} " class="portfolio-item-img img-fluid" @mouseover="imgHover = true" @mouseleave="imgHover = false">
-          </a>
+          <div 
+            class="portfolio-item-img-wrapper"
+            :style="
+                'background-image:url(img/loading/homepage-loading-'+loadingBg+'.gif);'+
+                'background-color:'+bgColor+';'
+              "
+          >
+            <img
+              :src="imgSelect"
+              alt=""
+              :class="{'zoom-in':imgHover, 'zoom-out':!imgHover, 'order-md-2':leftText} "
+              class="portfolio-item-img img-fluid"
+              @mouseover="imgHover = true"
+              @mouseleave="imgHover = false"
+            />
+          </div>
       </article>
+      <caption class="portfolio-item-caption">
+        {{caption}}
+      </caption>
     </nuxt-link>
   </div>
 </template>
 
 <script>
+// import VLazyImage from "v-lazy-image";
+
 export default {
   data(){
     return{
       imgHover:false
     }
   },
+  // components:{
+  //   VLazyImage
+  // },
   props:{
       name:{
           type: String
@@ -29,8 +53,21 @@ export default {
       overlayText:{
           type: String
       },
+      caption:{
+        type: String
+      },
+      role:{
+        type: String
+      },
       imgSrc:{
           type: String
+      },
+      loadingBg:{
+          type: String
+      },
+      bgColor:{
+          type: String,
+          default:'red'
       },
       staticSrc:{
           type: String
@@ -70,8 +107,49 @@ a{
 }
 .portfolio-item{
   position: relative;
-  img{
+  &-img-wrapper{
     border:2px solid $black;
+    height:auto;
+    overflow:hidden;
+    @media(min-width:$md){
+      min-height:202px;
+    }
+    @media(min-width:$lg){
+      min-height:275px;
+    }
+    // @media(min-width:$xl){
+    //   height:332px;
+    // }
+  }
+  &-role{
+    // text-align: center;
+    display: block;
+    color:$black;
+    // background: $white;
+    padding-bottom:0.5rem;
+    margin: 0;
+    // border-top:2px solid $black;
+    z-index:10000;
+    width: 100%;
+    font-size:0.85rem;
+    @media(min-width:$lg){
+      font-size:1.1rem;
+    }
+  }
+  &-caption{
+    text-align: center;
+    display: block;
+    color:$black;
+    // background: $white;
+    padding:0.5rem;
+    margin: 0;
+    // border-top:2px solid $black;
+    z-index:10000;
+    width: 100%;
+    font-size:0.85rem;
+    @media(min-width:$lg){
+      font-size:1.1rem;
+    }
   }
 }
 .zoom{

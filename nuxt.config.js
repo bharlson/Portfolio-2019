@@ -7,21 +7,22 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Bjørn Harlson | Designer, Web Developer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { name: 'og:image', content: 'http://bjornharlson.com/img/about/chomp-static.jpg' },
+      { hid: 'description', name: 'description', content: 'Portfolio Site for Bjørn Harlson, a Seattle based designer, front-end web developer and artist.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: '@/components/Loading.vue',
 
   /*
   ** Global CSS
@@ -40,6 +41,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~plugins/vue-scrollto.js',
+    '~plugins/v-lazy-image.js'
   ],
 
   /*
@@ -48,35 +51,8 @@ module.exports = {
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/,
     '@nuxtjs/axios',
-    'bootstrap-vue/nuxt',    
-    ['storyblok-nuxt', {
-      accessToken:
-        process.env.NODE_ENV == 'production'
-        ? process.env.STORYBLOK_PUBLIC
-        : process.env.STORYBLOK_PREVIEW,
-      cacheProvider:'memory'
-    }],
+    'bootstrap-vue/nuxt'
   ],
-
-  generate:{
-    routes: function(){
-      return axios.get(process.env.STORYBLOK_GENERATE + Math.floor(Date.now()/1e3)
-      )
-      .then(res =>{
-        return [
-          '/',
-          '/scott2019',
-          '/creaytive',
-          '/posters', 
-          '/logos',
-          '/about',
-          '/scotsman-guide',
-          '/ask-a-lender'
-        ]
-      })
-    }
-  },
-
 
   router: {
     extendRoutes (routes, resolve) {

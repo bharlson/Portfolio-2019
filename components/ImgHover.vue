@@ -1,6 +1,6 @@
 <template>
     <img
-        :src="imgSelect" 
+        :src="'/img/'+imgSelect" 
         alt="" 
         @mouseover="imgHover = true" 
         @mouseleave="imgHover = false"
@@ -31,7 +31,7 @@ export default {
               return this.staticSrc
           }
       }
-  }
+    }
 }
 </script>
 

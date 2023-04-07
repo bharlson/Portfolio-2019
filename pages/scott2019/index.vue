@@ -3,32 +3,43 @@
         <section id="intro">
             <div class="row">
                 <div class="col">
-                    <h1>{{title}}</h1>
-                    <p><b>Role:&nbsp;</b>{{role}}</p>
-                    <p v-html="intro"></p>
+                    <h1>{{pageTitle}}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <p><b>Role:&nbsp;</b>Web Development, Design</p>
+                </div>
+                <div class="col-md">                    
+                    <p class="text-md-right">
+                        <a href="http://scott2019.bjornharlson.com" target="_blank">Visit Site</a>
+                    </p> 
                 </div>
             </div>
         </section>
         <section id="final-site">
             <div class="row">
-                <div class="col">
-                    <p v-html="images[1].text"></p>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-md-8">
                     <project-img-scrollable
-                    :src="images[1].figure_img"
-                    :caption="images[1].figure_caption"
+                    src="scott2019/scott2019-final-homepage-full.jpg"
+                    caption="Homepage: Desktop"
                     name="scott2019-homepage-desktop"
+                    bgColor="#F5203E"
                     ></project-img-scrollable>
                 </div>
                 <div class="col-10 offset-1 offset-md-0 col-md-4">
                     <project-img-scrollable
-                    :src="images[2].figure_img"
-                    :caption="images[2].figure_caption"
+                    src="scott2019/scott2019-final-homepage-mobile-full.jpg"
+                    caption="Homepage: Mobile"
                     name="scott2019-homepage-mobile"
+                    bgColor="#F5203E"
                     ></project-img-scrollable>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                                        <p>Over the course of 2019, I built and managed the website for Shaun Scott's campaign for Seattle City Council.</p>
+                    <p>Around the same time I started working on the campaign site, I was learning vue.js for my work at Scotsman Guide. I took it as an opportunity to reinforce what I was learning, and built out the site using nuxt.js, a vue powered static site generator.</p>
                 </div>
             </div>
         </section>
@@ -40,17 +51,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-md-3 col-lg-2">
-                    <project-img :src="images[3].figure_img"></project-img>
+                <div class="col-6 col-lg-2">
+                    <project-img src="scott2019/democracy-voucher-hand.gif"></project-img>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2 offset-md-1">
-                    <project-img :src="images[4].figure_img"></project-img>
+                <div class="col-6 col-lg-2">
+                    <project-img src="scott2019/ballot-hand.gif"></project-img>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2 offset-md-1">
-                    <project-img :src="images[5].figure_img"></project-img>
+                <div class="col-6 col-lg-3">
+                    <project-img src="scott2019/meet-shaun.gif"></project-img>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2 offset-md-1">
-                    <project-img :src="images[6].figure_img"></project-img>
+                <div class="col-6 col-lg-5">
+                    <project-img src="scott2019/scott2019-form-demo.gif"></project-img>
                 </div>
             </div>
             <div class="row">
@@ -61,13 +72,13 @@
             </div>
              <div class="row">
                 <div class="col-6 col-md-4">
-                    <project-img :src="images[7].figure_img" :caption="images[7].figure_caption"></project-img>
+                    <project-img src="scott2019/scott2019-press-card.jpg" caption="Press Card"></project-img>
                 </div>
                 <div class="col-6 col-md-4">
-                    <project-img :src="images[8].figure_img" :caption="images[8].figure_caption"></project-img>
+                    <project-img src="scott2019/scott2019-blog-card.jpg" caption="Blog Card"></project-img>
                 </div>
                 <div class="col-6 col-md-4">
-                    <project-img :src="images[8].figure_img" :caption="images[8].figure_caption"></project-img>
+                    <project-img src="scott2019/scott2019-endorsement-cards.jpg" caption="Endorsement Cards"></project-img>
                 </div>
 
             </div>
@@ -82,10 +93,43 @@
                     <project-img :src="images[9].figure_img" :caption="images[9].figure_caption"></project-img>
                 </div> -->
                 <div class="col-12">
-                    <project-img :src="images[10].figure_img" :caption="images[10].figure_caption"></project-img>
+                    <project-img src="scott2019/scott2019-homepage-explainer.jpg" caption="Homepage Explainer"></project-img>
                 </div>
                 <div class="col-12">
-                    <project-img :src="images[12].figure_img" :caption="images[12].figure_caption"></project-img>
+                    <project-img src="scott2019/scott2019-register-to-vote-explainer.jpg" caption="Voter Registration Explainer"></project-img>
+                </div>
+            </div>
+        </section>
+        <section id="conclusion">
+            <div class="row">
+                <div class="col">
+                    <project-img src="scott2019/huddle.jpg"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Reflection</h2>
+                    <p>This project was a major milestone for my career. Doing in house work at
+                        <nuxt-link to="/scotsman-guide">Scotsman Guide</nuxt-link>, I'm well accustomed to filling a specialized role on a team with the comfort I can defer to others if I need support. On this project, I was solely responsible for building and maintaining a high profile website. The challenge was at once daunting and thrilling.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>Not only did I have to build the site, but I was de facto tech support for anything web related. I stayed up till 5 am the night before the campaign's launch helping the campaign manager through the process of purchasing a web hosting plan and routing the domain.</p>
+                    <p>The next <s>morning</s> afternoon, I got to see the site I built linked all over the local news. As the campaign season got going, I saw more and more yard signs with the site popping up all over my neighborhood. It was an honor to work on a project I felt so much personal passion for, and I learned a lot about myself and web development in the process.</p>
+                </div>
+                <div class="offset-md-2 offset-lg-0 col-lg-4">
+                    <project-img src="scott2019/yard-sign.jpeg" caption="Photo Credit: CJ Priebe"></project-img>  
+                </div>
+            </div>
+        </section>
+        <section id="credit">
+            <div class="row mt-4">
+                <div class="col">
+                    <h2>Credit</h2>
+                    <p><b>Eva Wood:</b> Visual Design, Wireframes, Branding</p>
+                    <p><b>Myra Lara:</b> Illustration, Logo, Print Design</p>
                 </div>
             </div>
         </section>
@@ -97,40 +141,22 @@
 import ProjectImg from '@/components/ProjectImg.vue'
 import ProjectImgScrollable from '@/components/ProjectImgScrollable.vue'
 export default {
-    layout:'project',
+    layout:'page',
     components:{
         ProjectImg,
         ProjectImgScrollable
     },
     data(){
         return{
-            template:'project'
+            template:'project',
+            pageTitle: 'Scott 2019'
         }
     },
-    asyncData(context){
-        return context.app.$storyapi.get('cdn/stories/scott2019',{
-            // version: context.isDev ? 'draft':'published', 
-            version: 'draft' 
-        }).then(res=>{
-            // console.log(res.data.story.content);
-            return {
-                title: res.data.story.content.title,
-                role: res.data.story.content.role,
-                intro: res.data.story.content.intro,
-                body: res.data.story.content.body,
-                images: res.data.story.content.images
-            };
-        })
-    },
-    mounted(){
-        this.$storybridge.on('change', ()=>{
-            location.reload(true);
-        });
-        window.onresize = ()=>{
-            this.windowWidth = window.innerWidth;
+    head(){
+        return{
+            title:'Bjørn Harlson | '+this.pageTitle
         }
-    },
-
+    }
 }
 </script>
 

@@ -1,10 +1,210 @@
 @import './variables';
-*{
-    font-family:'courier';
+
+* {
+  font-family: 'Courier', Courier, monospace;
+  &::selection{
+    background:$black;
+    color:$white;
+  }
 }
 
-main{
-    // position: relative;
-    top:$headerHeightMobile;
+main {
+  // position: relative;
+  top: $headerHeightMobile;
+
 }
+
+h2,.footer-projects-link {
+  font-size: 1.75rem;
+  @media (min-width:$md) {
+    font-size: 2rem;
+  }
+}
+
+a {
+  color: $blue;
+  padding-top: none;
+
+  &::selection{
+    background-color:$blue;
+    color:$white;
+  }
+
+  &:hover,
+  &:active {
+    color: $blue;
+    cursor: pointer!important;
+    // cursor:url('../../static/img/cursors/cursor-up.png'), auto;
+
+  }
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.border-black {
+  border: 2px solid $black;
+}
+
+img{
+  &::selection{
+    background-blend-mode:color-burn;
+    mix-blend-mode:color-burn;
+    background-color:rgba($blue, 0.5)
+  }
+}
+// .header {
+//   z-index: 10000;
+//   // position: fixed;
+//   width: 100%;
+//   display: block;
+//   background-color: $white;
+//   padding-top: 1rem;
+
+//   &-nav {
+//     padding: 0 1rem 1rem 1rem;
+
+//     @media (min-width: 768px) {
+//       padding: 1rem;
+//     }
+
+//     &-list {
+//       list-style-type: none;
+//       padding: 0;
+//       display: block;
+//       text-align: right;
+
+//       @media (min-width: 768px) {
+//         text-align: right;
+//       }
+
+//       &-item {
+//         display: inline;
+//         font-size: 2rem;
+//         padding-right: 1rem;
+//         &::selection{
+//           background-color:$blue;
+//           color:$white;
+//         }
+
+//         &:hover,
+//         &:active {
+//           opacity: 0.7;
+//           cursor: pointer;
+//         //   cursor:url('../../static/img/cursors/cursor-up.png'), auto;
+//         }
+
+//         @media (max-width: 768px) {
+//           font-size: 1.5rem;
+//           display: block;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.header,.footer {
+  z-index: 10000;
+  // position: fixed;
+  width: 100%;
+  display: block;
+  background-color: $white;
+  padding-top: 1rem;
+
+  a{
+      color:$black;
+      &:hover,&:active{
+          text-decoration: none;
+          opacity: 0.7;
+          cursor: pointer;
+      }
+  }
+
+  &-nav {
+    padding: 0 1rem 1rem 1rem;
+
+    @media (min-width: $lg) {
+      padding: 1rem;
+    }
+
+    &-list {
+      list-style-type: none;
+      padding: 0;
+      display: block;
+      text-align: right;
+
+      @media (min-width: $lg) {
+        text-align: right;
+      }
+
+      &-item {
  
+        font-size: 1.5rem;
+        padding-right: 1rem;
+
+        
+
+        &:hover,
+        &:active {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+        display: block;
+        @media (min-width: $md) {
+          margin-top: 1.25rem;
+          display: inline-block;
+          
+        }
+        @media (min-width: $lg) {
+          font-size: 2rem;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.v-lazy-image{
+  filter: blur(2px);
+  // filter:blur(1rem);
+  transition: filter 0.7s;
+  // image-rendering: pixelated;
+  &-loaded{
+      filter: blur(0);
+      // image-rendering:auto;
+    }
+}
+
+.custom-cursor{
+  &-home{
+    &::after{
+      content:url( ../../static/img/cursors/house.png);
+    }
+  }
+  &-name{
+    &::after{
+      content:url( ../../static/img/cursors/waving-hand.png);
+    }
+  }
+  &-norway{
+    &::after{
+      content:url( ../../static/img/cursors/norway.png);
+    }
+  }
+  &-rain{
+    &::after{
+      content:url( ../../static/img/cursors/rain.png);
+    }
+  }
+  &-audio{
+    &::after{
+      content:url(../../static/img/cursors/audio.png);
+    }
+  }
+  &-millennial{
+    &::after{
+      content:url(../../static/img/cursors/avocado.png);
+    }
+  }
+}
