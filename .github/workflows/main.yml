@@ -15,5 +15,6 @@
         - name: Cypress.io
           uses: cypress-io/github-action@a29a621b736c9a8547ba0236cc9cee1e49725bd5
           with:
-            dev: npm run dev
-            open: npx cypress open
+            start: npm run dev
+            wait-on: http://localhost:3000/
+            run: npx cypress run 
