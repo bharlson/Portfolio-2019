@@ -12,9 +12,9 @@
           uses: actions/checkout@v3
         # Install NPM dependencies, cache them correctly
         # and run all Cypress tests
-        - name: Cypress.io
+        - name: Cypress run
           uses: cypress-io/github-action@a29a621b736c9a8547ba0236cc9cee1e49725bd5
           with:
             start: npm run dev
             wait-on: http://localhost:3000/
-            run: npx cypress runTests 
+            run: npx cypress run
