@@ -16,4 +16,4 @@
           uses: cypress-io/github-action@v5
           with:
             build: npm run build
-            start: npm cypress open
+            open: npx cypress open
