@@ -21,7 +21,8 @@
               </hover-area-inline>
             </li>
 
-            <li><b>Position:</b> Digital Designer at <nuxt-link to="/scotsman-guide">Scotsman Guide</nuxt-link>
+            <li><b>Position:</b> Software Developer at <a href="https://onecare.com" target="_blank">Onecare</a>
+            <!-- <li><b>Position:</b> Software Developer at <nuxt-link to="/scotsman-guide">Scotsman Guide</nuxt-link> -->
             </li>
             <li><b>Favorite Tools:</b> Photoshop, Sketch, SASS, Vue.JS, Nuxt.JS, GSAP, Ableton Live</li>
             <li><b>Hobbies/Interests:</b> Studying languages, making music, djing, dancing to music, making memes,
@@ -65,7 +66,7 @@
           <h2>Work Experience</h2>
         </div>
         <div class="col col-md-4">
-          <p class="mt-md-2"><a href="/img/BjornHarlson-Resume-0421.pdf">View Resumé</a></p>
+          <p class="mt-md-2"><a href="/img/BjornHarlson-Resume-0623.pdf">View Resumé</a></p>
         </div>
       </div>
       <work-exp v-for="(i, index) in workExperience" :key="index" :companyName="i.companyName" :location="i.location"
@@ -107,13 +108,22 @@
         windowWidth: 0,
         animatedSrc: '/img/about/chomp-3.gif',
         staticSrc: '/img/about/chomp-static.jpg',
-        workExperience: [{
+        workExperience: [
+          {
+            companyName: "<a href='https://onecare.com'>Onecare Media</a>",
+            location: "Seattle, WA",
+            start: "Sep. 2021",
+            end: "Present",
+            position: "Software Developer",
+            desc: "Builds and maintains multiple high traffic Wordpress sites. Creates automated tests for SEO and performance. Writes documentation and contributes to code reviews with team to maintain high code quality standards."
+          },
+          {
             companyName: "<a href='/scotsman-guide'>Scotsman Guide</a>/<a href='/ask-a-lender'>Ask a Lender</a>",
             location: "Bothell, WA",
             start: "Apr. 2017",
-            end: "Present",
+            end: "Sep. 2021",
             position: "Digital Designer",
-            desc: "Works on a variety of design and web development projects including: image production for web and print editorial use, user interface design, prototyping, HTML email creation, and front end web development."
+            desc: "Worked on a variety of design and web development projects including: image production for web and print editorial use, user interface design, prototyping, HTML email creation, and front end web development."
           },
           {
             companyName: "<a href='/nikkita4nine'>Nikkita 4 Nine</a>",
