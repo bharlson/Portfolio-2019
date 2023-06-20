@@ -129,7 +129,7 @@
             companyName: "<a href='/nikkita4nine'>Nikkita 4 Nine</a>",
             location: "Seattle, WA",
             start: "Mar. 2021",
-            end: "Present",
+            end: "Dec. 2021",
             position: "Web Developer (Freelance)",
             desc: "Built a campaign site for a local city council campaign using Nuxt.js, currently restructuring the site to use the headless CMS storyblok."
           },
