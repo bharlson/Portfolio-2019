@@ -14,7 +14,7 @@
         </div>
         <div class="row">
           <div class="col">
-            <p>I'm a designer and front end web developer born and raised in Seattle</p>
+            <p>I'm a designer and full-stack web developer born and raised in Seattle</p>
             <p>Artist since 1994, designer since 2011, web developer since 2014.</p>
             <p>Currently working as a Software Developer at <a href="https://onecare.com" target="_blank">Onecare
                 Media</a></p>
