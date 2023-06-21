@@ -37,11 +37,47 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p>OneCare Media is a digital media company which manages multiple brands and web properties in the sleep and wellness vertical. The most successful of these as of 2023 is Sleep Foundation. </p>
-                    <p>Sleepfoundation.org has a mix of educational content and commercial product reviews/listicles and consistently ranks in the top 5 of popular sleep related search queries.</p>
-                    <p>Working on the redesign of sleepfoundation.org I got a crash course on modern Wordpress development, SEO and the wide range of factors that help a high traffic site perform so well. </p>
+                    <p>Of the multiple brands managed by Onecare Media, Sleep Foundation is, as of 2023, the most successful. <a href="https://sleepfoundation.org" target="_blank">Sleepfoundation.org</a> has a mix of educational articles and commercial product reviews/listicles.</p>
+                    <p>Built with SEO in mind by some of the best experts in the industry, the site consistently ranks in the top 5 Google results for popular sleep related search queries.</p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <project-img src="sleepfoundation/google-ranking-example.png" preview="true" />
+                </div>
+                <div class="col-md-6">
+                    <project-img src="sleepfoundation/google-ranking-cpap.png" preview="true" caption="Results as of June 2023" />
+                </div>
+            </div>
+        </section>
+        <section id="redesign">
+            <div class="row">
+                <div class="col">
+                    <h2>Redesign</h2>
+                    <p>During 2021 and 2022, Onecare Media grew rapidly as an organization and I was tasked along with my partners on the engineering team with revamping the Wordpress themes used across our suite of web properties, starting with Sleep Foundation.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <project-img-scrollable 
+                    src="sleepfoundation/sleepfoundation-v1-homepage-full.jpg"
+                    name="sleepfoundation-v1"
+                    bgColor="#ffffff"
+                    caption="Homepage: Original Design Circa 2021"
+                    >
+                    </project-img-scrollable>
+               </div>
+                <div class="col-md-6">
+                    <project-img-scrollable 
+                    src="sleepfoundation/sleepfoundation-interim-homepage-full.jpg"
+                    name="sleepfoundation-interim"
+                    bgColor="#ffffff"
+                    caption="Homepage: Interim Design Circa 2022"
+                    >
+                    </project-img-scrollable>
+               </div>
+            </div>
+
         </section>
         <section id="reflection">
             <div class="row">
@@ -60,7 +96,7 @@
             <div class="row mt-4">
                 <div class="col">
                     <h2>Credit</h2>
-                    <p><b>Nathan Moslinger:</b> Visual Design</p>
+                    <p><b>Nathan Motsinger:</b> Visual Design</p>
                     <p><b>Michelle Weaver:</b> Co-Developer</p>
                     <p><b>Blake Stagner:</b> Co-Developer</p>
                     <p><b>Amber Alter:</b> Co-Developer</p>
@@ -119,6 +155,39 @@ export default {
         }
         @media (min-width: $xl){
             height:628px;
+        }
+    }
+    &-v1{
+        height:324px;
+        @media (min-width: $sm){
+            height:480px;
+        }
+        @media (min-width: $md){
+            height:480px;
+        }
+        @media (min-width: $lg){
+            height:480px;
+        }
+        @media (min-width: $xl){
+            height:560px;
+        }
+    }
+    &-interim{
+        height:360px;
+        @media (min-width: '420px'){
+            height:425px;
+        }
+        @media (min-width: $sm){
+            height:540px;
+        }
+        @media (min-width: $md){
+            height:480px;
+        }
+        @media (min-width: $lg){
+            height:480px;
+        }
+        @media (min-width: $xl){
+            height:560px;
         }
     }
 }
