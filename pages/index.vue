@@ -57,7 +57,17 @@
     data() {
       return {
         windowWidth: 0,
-        dataSrc: [{
+        dataSrc: [
+          {
+            name: 'Sleep Foundation',
+            link: 'sleepfoundation',
+            imgSrc: require('@/assets/img/sleepfoundation/sleepfoundation-desktop-animated.gif'),
+            staticSrc: require('@/assets/img/sleepfoundation/sleepfoundation-desktop-static.jpg'),
+            bgColor: '#2f4571',
+            role: 'Web Development',
+            caption: 'Sleep-Oriented Editorial and Commercial Website'
+          },
+          {
             name: 'Scotsman Guide',
             link: 'scotsman-guide',
             imgSrc: require('@/assets/img/sgm/scotsmanguide-desktop-animated.gif'),
@@ -97,16 +107,16 @@
             role: 'Design, Web Development',
             caption: 'Consumer-facing Lending Info Website'
           },
-          {
-            name: 'Creaytive',
-            alt: 'Creaytive',
-            link: 'creaytive',
-            imgSrc: require('@/assets/img/creaytive/creaytive-desktop-animated.gif'),
-            staticSrc: require('@/assets/img/creaytive/creaytive-desktop-static.jpg'),
-            bgColor: '#4E83D3',
-            role: 'Web Development',
-            caption: 'Design and Marketing Firm'
-          },
+          // {
+          //   name: 'Creaytive',
+          //   alt: 'Creaytive',
+          //   link: 'creaytive',
+          //   imgSrc: require('@/assets/img/creaytive/creaytive-desktop-animated.gif'),
+          //   staticSrc: require('@/assets/img/creaytive/creaytive-desktop-static.jpg'),
+          //   bgColor: '#4E83D3',
+          //   role: 'Web Development',
+          //   caption: 'Design and Marketing Firm'
+          // },
           {
             name: 'Memes',
             alt: 'Memes',

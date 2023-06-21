@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-md">
                     <p class="text-md-right">
-                        <a href="https://sleepfoundation.org">Visit Site</a>
+                        <a href="https://sleepfoundation.org" target="_blank">Visit Site</a>
                     </p>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                     <project-img-scrollable 
                     src="sleepfoundation/sleepfoundation-homepage-full.jpg"
                     name="sleepfoundation-desktop"
-                    bgColor="#4E83D3"
+                    bgColor="#2f4571"
                     caption="Homepage: Desktop"
                     >
                     </project-img-scrollable>
@@ -30,14 +30,16 @@
                     <project-img-scrollable 
                     src="sleepfoundation/sleepfoundation-homepage-full-mobile.jpg"
                     name="sleepfoundation-mobile"
-                    bgColor="#4E83D3"
+                    bgColor="#2f4571"
                     caption="Homepage: Mobile"
                     ></project-img-scrollable>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p>For the past </p>
+                    <p>OneCare Media is a digital media company which manages multiple brands and web properties in the sleep and wellness vertical. The most successful of these as of 2023 is Sleep Foundation. </p>
+                    <p>Sleepfoundation.org has a mix of educational content and commercial product reviews/listicles and consistently ranks in the top 5 of popular sleep related search queries.</p>
+                    <p>Working on the redesign of sleepfoundation.org I got a crash course on modern Wordpress development, SEO and the wide range of factors that help a high traffic site perform so well. </p>
                 </div>
             </div>
         </section>
