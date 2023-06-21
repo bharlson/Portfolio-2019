@@ -136,15 +136,15 @@
             </div> -->
             <div class="row">
                 <div class="col">
-                    <project-img src="sleepfoundation/desktop-nav.jpg" caption="Main Navigation: Desktop" />
+                    <project-img src="sleepfoundation/desktop-nav.jpg" preview="true" caption="Main Navigation: Desktop" />
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <project-img src="sleepfoundation/mobile-nav.jpg" caption="Main Navigation: Mobile" />
+                    <project-img src="sleepfoundation/mobile-nav.jpg" preview="true" caption="Main Navigation: Mobile" />
                 </div>
                 <div class="col">
-                    <project-img src="sleepfoundation/homepage-banner.png" caption="Homepage Banner Block" />
+                    <project-img src="sleepfoundation/homepage-banner.png" preview="true" caption="Homepage Banner Block" />
                 </div>
             </div>
             <!-- <div class="row">
@@ -154,10 +154,10 @@
             </div> -->
             <div class="row">
                 <div class="col-md-8">
-                    <project-img src="sleepfoundation/sleep-habits-banner.jpg" caption="Sleep Habits Banner Block, used on the homepage" />
+                    <project-img src="sleepfoundation/sleep-habits-banner.jpg" preview="true" caption="Sleep Habits Banner Block, used on the homepage" />
                 </div>
                 <div class="col">
-                    <project-img src="sleepfoundation/author-block.png" caption="Author Block, used on <a href='https://www.sleepfoundation.org/about-us/who-we-are' target='_blank'>'Who We Are'</a> " />
+                    <project-img src="sleepfoundation/author-block.png" preview="true" caption="Author Block, used on <a href='https://www.sleepfoundation.org/about-us/who-we-are' target='_blank'>'Who We Are'</a> " />
                 </div>
             </div>
 
