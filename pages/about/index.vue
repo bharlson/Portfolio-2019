@@ -115,7 +115,7 @@
             start: "Sep. 2021",
             end: "Present",
             position: "Software Developer",
-            desc: "Builds and maintains multiple high traffic Wordpress sites. Creates automated tests for SEO and performance. Writes documentation and contributes to code reviews with team to maintain high code quality standards."
+            desc: "Builds and maintains multiple high traffic Wordpress sites. Creates automated tests for SEO and performance. Contributed to redesign of theme for <a href='/sleepfoundation'>Sleepfoundation.org</a>.  Writes documentation and contributes to code reviews with team to maintain high code quality standards."
           },
           {
             companyName: "<a href='/scotsman-guide'>Scotsman Guide</a>/<a href='/ask-a-lender'>Ask a Lender</a>",
