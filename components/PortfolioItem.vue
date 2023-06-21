@@ -1,9 +1,9 @@
 <template>
   <div class="col-md-6 mb-4">
     <nuxt-link :to="{path:link}">
-      <article class="portfolio-item">
+      <article class="portfolio-item position-relative">
           <h3 class="mb-0 pb-0">{{name}}</h3>
-          <span class="portfolio-item-role" v-if="role">
+          <span class="portfolio-item-role d-block m-0" v-if="role">
             <b>Role:</b> {{role}}
           </span>
           <span class="overlay-text" v-if="overlayText" >{{overlayText}}</span>
@@ -24,7 +24,7 @@
             />
           </div>
       </article>
-      <caption class="portfolio-item-caption">
+      <caption class="portfolio-item-caption d-block m-0 w-100">
         {{caption}}
       </caption>
     </nuxt-link>
@@ -32,7 +32,6 @@
 </template>
 
 <script>
-// import VLazyImage from "v-lazy-image";
 
 export default {
   data(){
@@ -103,32 +102,30 @@ a{
   color:$black;
   &:hover, &:active{
    text-decoration:none;
+   cursor: pointer;
   }
 }
 .portfolio-item{
-  position: relative;
   &-img-wrapper{
     border:2px solid $black;
     height:auto;
     overflow:hidden;
+    &:hover{
+      cursor: pointer t;
+    }
+
     @media(min-width:$md){
       min-height:202px;
     }
     @media(min-width:$lg){
       min-height:275px;
     }
-    // @media(min-width:$xl){
-    //   height:332px;
-    // }
+
+
   }
   &-role{
-    // text-align: center;
-    display: block;
     color:$black;
-    // background: $white;
     padding-bottom:0.5rem;
-    margin: 0;
-    // border-top:2px solid $black;
     z-index:10000;
     width: 100%;
     font-size:0.85rem;
@@ -138,14 +135,9 @@ a{
   }
   &-caption{
     text-align: center;
-    display: block;
     color:$black;
-    // background: $white;
     padding:0.5rem;
-    margin: 0;
-    // border-top:2px solid $black;
     z-index:10000;
-    width: 100%;
     font-size:0.85rem;
     @media(min-width:$lg){
       font-size:1.1rem;
@@ -158,8 +150,6 @@ a{
       transition:transform 1s ease;
       transition-delay: opacity 1.5s;
       transform:scale(1.01) ;
-      // opacity:0.9;
-
     }
   }
   &-out{

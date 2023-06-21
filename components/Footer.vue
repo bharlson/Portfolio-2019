@@ -20,9 +20,6 @@
                   </ul>
               </div>
               <div class="col">
-                  <!-- <p class="text-center text-md-right">
-                      &copy; 2021 Bjørn Harlson 
-                  </p> -->
                 <ul class="footer-links list-unstyled">
                     <li class="text-right">
                         <a href="#" v-scroll-to="'#top'">Back to Top</a>
@@ -31,7 +28,7 @@
                         <nuxt-link to="/">Home</nuxt-link>
                     </li>
                     <li class="d-none d-md-block text-right">
-                        &copy; 2021 Bjørn Harlson 
+                        &copy; {{currentYear}} Bjørn Harlson 
                     </li>
                 </ul>
               </div>
@@ -39,9 +36,7 @@
           <div class="row">
               <div class="col">
                   <p class="text-center d-md-none">
-                      <!-- <nuxt-link to="/">Home</nuxt-link>
-                      <a class="ml-5" href="#" v-scroll-to="'#top'">Back to Top</a> -->
-                      &copy; 2021 Bjørn Harlson 
+                      &copy; {{currentYear}} Bjørn Harlson 
                   </p>
               </div>
           </div>
@@ -55,6 +50,11 @@ export default {
         home:{
             type:Boolean,
             default:false
+        }
+    },
+    computed:{
+        currentYear(){
+            return  new Date().getFullYear().toString();
         }
     }
 }
