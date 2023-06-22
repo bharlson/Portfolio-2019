@@ -64,7 +64,7 @@
             imgSrc: require('@/assets/img/sleepfoundation/sleepfoundation-desktop-animated.gif'),
             staticSrc: require('@/assets/img/sleepfoundation/sleepfoundation-desktop-static.jpg'),
             bgColor: '#2f4571',
-            role: 'Web Development',
+            role: 'Web Development, Wordpress Theming, Testing',
             caption: 'Sleep-Oriented Editorial and Commercial Website'
           },
           {

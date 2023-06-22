@@ -17,6 +17,12 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col">
+                    <p><b>Tools:&nbsp;</b>Wordpress, Gutenberg Blocks, PHP, Twig, ACF, Bootstrap, SASS, jQuery</p>
+
+                </div>
+            </div>
+            <div class="row">
                <div class="col-md-8">
                     <project-img-scrollable 
                     src="sleepfoundation/sleepfoundation-homepage-full.jpg"
@@ -84,6 +90,7 @@
             <div class="row mt-4">
                 <div class="col">
                     <h2>Tech Stack</h2>
+                    <p class="line-height-sm"><small><i>Note: All screenshots of the Wordpress Dashboard and code snippets used on this page are from publicly available documentation of the technologies used, <b>not</b> from private sleepfoundation sources</i></small></p>
                     <p>We started with the structural changes first, implementing a new tech stack optimized for clean code, a modular component structure and logical, replicable CSS standards building off Bootstrap.</p>
                 </div>
             </div>
@@ -92,14 +99,14 @@
                     <h3>Gutenberg Blocks</h3>
                     <p>In 2018 Wordpress added Gutenberg Blocks which allow for the creation of reusable modular UI components, in a way that JAMstack libraries like React, Angular and Vue operate. </p>
                     <p>With the rest of our tech stack we created a library of blocks that could be used by our content editors to intuitively structure the site using the WYSIWYG editor without having to write a line of code.</p>
-                    <p>(Example images from <a href="https://www.advancedcustomfields.com/blog/acf-5-8-introducing-acf-blocks-for-gutenberg/" target="_blank">The Advanced Custom Fields Blog</a>)</p>
+                    <p><small><i>(Example images from <a href="https://www.advancedcustomfields.com/blog/acf-5-8-introducing-acf-blocks-for-gutenberg/" target="_blank">The Advanced Custom Fields Blog</a>)</i></small></p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <project-img src="sleepfoundation/gutenberg-blocks.png" preview="true" caption="Selecting a block in the WYSIWYG Editor" />
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <project-img src="sleepfoundation/acf-fields-editor-example.jpg" preview="true" caption="Editing a block" />
                 </div>
             </div>
